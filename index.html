@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Allan Valm · AI Augmentation Partner in Financial Services</title>
+<meta name="description" content="Allan Valm helps leaders in regulated financial services decide whether AI is ready for production. A weekly working session, plus specialist depth on demand.">
+<meta name="theme-color" content="#2F313F">
+<link rel="canonical" href="https://valm.pro/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='%2332BB78'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Allan Valm">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://valm.pro/">
+<meta property="og:title" content="Allan Valm · AI Augmentation Partner">
+<meta property="og:description" content="A weekly working session on the AI decisions that matter, plus specialist depth on demand. Move faster without losing control.">
+<meta property="og:image" content="https://valm.pro/allan-valm-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Allan Valm, AI Augmentation Partner">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Allan Valm · AI Augmentation Partner">
+<meta name="twitter:description" content="A weekly working session on the AI decisions that matter, plus specialist depth on demand.">
+<meta name="twitter:image" content="https://valm.pro/allan-valm-og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F9FAFB; --white:#FFFFFF; --charcoal:#2F313F;
+    --ink:#2F313F; --ink-soft:#565A6A; --hair:#E7E9EE; --hair-dark:#3C3F50;
+    --green:#32BB78; --green-deep:#2BA76B; --green-tint:#E7F6EE;
+    --on-dark:#F5F6F8; --on-dark-soft:#AEB2C4;
+    --measure:41rem; --gutter:1.6rem;
+    --r-pill:999px; --r-card:22px; --r-sm:14px;
+    --ease:cubic-bezier(.16,1,.3,1);
+    --f:"Inter", system-ui, -apple-system, sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+  html{ -webkit-text-size-adjust:100%; scroll-padding-top:80px; }
+  @media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth;} }
+
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:var(--f); font-weight:400;
+    font-size:clamp(1.02rem,0.98rem + 0.2vw,1.14rem);
+    line-height:1.62; letter-spacing:-0.003em;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+
+  .wrap{ width:min(100% - (var(--gutter) * 2), var(--measure)); margin-inline:auto; }
+
+  /* ---- Sticky nav ---- */
+  .nav{
+    position:fixed; top:0; left:0; right:0; z-index:30;
+    transition:background .25s ease, box-shadow .25s ease, backdrop-filter .25s ease;
+  }
+  .nav-inner{
+    width:min(100% - (var(--gutter) * 2), var(--measure)); margin-inline:auto;
+    height:60px; display:flex; align-items:center; justify-content:space-between;
+  }
+  .nav--solid{
+    background:rgba(249,250,251,.82);
+    -webkit-backdrop-filter:saturate(1.3) blur(12px); backdrop-filter:saturate(1.3) blur(12px);
+    box-shadow:0 1px 0 var(--hair), 0 6px 24px rgba(47,49,63,.06);
+  }
+  .nav-brand{ display:flex; align-items:center; gap:.55rem; font-weight:700; font-size:1rem; color:var(--ink); letter-spacing:-.01em; text-decoration:none; }
+  .nav-dot{ width:9px; height:9px; border-radius:var(--r-pill); background:var(--green); }
+  .nav-cta{
+    font-weight:600; font-size:.92rem; color:var(--charcoal); background:var(--green);
+    padding:.62rem 1.1rem; border-radius:var(--r-pill); text-decoration:none;
+    transition:background .18s ease, transform .18s ease, box-shadow .18s ease;
+  }
+  .nav-cta:hover{ background:var(--green-deep); transform:translateY(-1px); box-shadow:0 6px 18px rgba(50,187,120,.30); }
+  .nav-cta:focus-visible{ outline:3px solid var(--charcoal); outline-offset:3px; }
+
+  /* ---- Sections ---- */
+  .section{ padding-block:clamp(4rem,8.5vw,7rem); }
+  .section--dark{ background:var(--charcoal); color:var(--on-dark); }
+  .section--green{ background:var(--green); color:var(--ink); }
+  .section--dark .kicker{ color:var(--green); }
+  .section--dark .tick{ background:var(--green); }
+
+  /* ---- Type roles ---- */
+  .kicker{ font-weight:600; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color:var(--green); margin:0 0 1.1rem; }
+  .tick{ display:block; width:30px; height:4px; border-radius:var(--r-pill); background:var(--green); margin-bottom:1.35rem; }
+  h2.head{ font-weight:700; font-size:clamp(1.7rem,1.25rem + 2vw,2.4rem); line-height:1.1; letter-spacing:-.022em; margin:0 0 1.5rem; max-width:20ch; }
+  .section p{ margin:0 0 1.15rem; max-width:60ch; }
+  .section p:last-child{ margin-bottom:0; }
+  .soft{ color:var(--ink-soft); }
+  .section--dark .soft{ color:var(--on-dark-soft); }
+  a{ color:var(--green-deep); text-underline-offset:.18em; text-decoration-thickness:1px; }
+  .section--dark a{ color:var(--green); }
+
+  /* ---- Buttons ---- */
+  .btn{
+    display:inline-block; font-family:var(--f); font-weight:600; font-size:1.02rem;
+    letter-spacing:-.006em; line-height:1; color:var(--charcoal); background:var(--green);
+    padding:1.05rem 1.9rem; border-radius:var(--r-pill); text-decoration:none;
+    transition:background .18s ease, transform .18s ease, box-shadow .18s ease;
+  }
+  .btn:hover{ background:var(--green-deep); transform:translateY(-1px); box-shadow:0 8px 22px rgba(50,187,120,.30); }
+  .btn:active{ transform:translateY(0); }
+  a:focus-visible, .btn:focus-visible{ outline:3px solid var(--charcoal); outline-offset:3px; }
+  .section--dark .btn:focus-visible{ outline-color:var(--green); }
+  .btn--dark{ background:var(--charcoal); color:#fff; }
+  .btn--dark:hover{ background:#24262F; box-shadow:0 8px 22px rgba(47,49,63,.30); }
+  .btn--dark:focus-visible{ outline-color:var(--charcoal); }
+
+  /* ---- Hero ---- */
+  .hero{ padding-top:clamp(5.5rem,12vh,9rem); padding-bottom:clamp(4rem,9vw,6.5rem); }
+  .eyebrow{ font-weight:600; font-size:.82rem; letter-spacing:.12em; text-transform:uppercase; color:var(--green-deep); margin:0 0 1.8rem; }
+  h1.hero-head{ font-weight:800; font-size:clamp(2.6rem,1.7rem + 4.2vw,4.3rem); line-height:1.02; letter-spacing:-.03em; margin:0 0 1.6rem; max-width:15ch; }
+  .hl{
+    color:var(--charcoal); padding:.02em .22em; border-radius:.28em;
+    background-image:linear-gradient(var(--green),var(--green));
+    background-repeat:no-repeat; background-position:left center; background-size:100% 100%;
+    -webkit-box-decoration-break:clone; box-decoration-break:clone;
+  }
+  .subhead{ font-size:clamp(1.16rem,1.05rem + 0.45vw,1.35rem); line-height:1.48; color:var(--ink-soft); margin:0 0 1rem; max-width:40ch; }
+  .qualifier{ font-size:.96rem; line-height:1.5; color:var(--ink-soft); margin:0 0 2.3rem; max-width:44ch; }
+  .hero-cta{ display:flex; flex-direction:column; align-items:flex-start; gap:1rem; }
+  .micro{ font-size:.92rem; line-height:1.55; color:var(--ink-soft); margin:0; max-width:38ch; }
+
+  /* ---- Two beats as cards ---- */
+  .beats{ display:flex; flex-direction:column; gap:1.15rem; }
+  .beat-card{
+    background:var(--white); border:1px solid var(--hair); border-radius:var(--r-card);
+    padding:clamp(1.5rem,4vw,2.1rem); box-shadow:0 2px 26px rgba(47,49,63,.05);
+    transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+  }
+  .beat-card:hover{ transform:translateY(-3px); box-shadow:0 12px 34px rgba(47,49,63,.10); border-color:var(--green); }
+  .beat-card p{ margin:0; }
+  .beat-label{ font-weight:600; font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; color:var(--green-deep); margin:0 0 .75rem; }
+
+  /* ---- Honest part ---- */
+  .honest{ padding-block:clamp(5rem,11vw,9rem); }
+  .honest .head{ font-size:clamp(2rem,1.4rem + 2.8vw,3rem); max-width:16ch; }
+  .honest p{ max-width:52ch; }
+
+  /* ---- Close ---- */
+  .close .head{ max-width:18ch; }
+  .close p{ max-width:52ch; }
+  .close .btn{ margin-top:1.7rem; }
+
+  /* ---- Portrait ---- */
+  .portrait{ display:block; width:100%; max-width:420px; aspect-ratio:3/2; object-fit:cover; object-position:50% 30%; border-radius:var(--r-card); border:1px solid var(--hair); box-shadow:0 6px 30px rgba(47,49,63,.08); margin-bottom:2rem; }
+
+  /* ---- Footer ---- */
+  .footer{ background:var(--charcoal); color:var(--on-dark-soft); border-top:1px solid var(--hair-dark); padding-block:clamp(2.6rem,5vw,3.6rem); }
+  .footer-line{ font-size:.92rem; line-height:1.9; }
+  .footer-line .name{ color:var(--on-dark); font-weight:600; }
+  .footer a{ color:var(--green); text-decoration:none; }
+  .footer a:hover{ text-decoration:underline; }
+
+  /* ---- Track record ---- */
+  .rlist{ border-top:1px solid var(--hair); }
+  .ritem{ padding:1.3rem 0; border-bottom:1px solid var(--hair); }
+  .rorg{ margin:0 0 .5rem; font-weight:600; font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; color:var(--green-deep); }
+  .rbody{ margin:0; color:var(--ink-soft); font-size:.99rem; line-height:1.58; max-width:62ch; }
+
+  /* ---- Patterns ---- */
+  .plist{ display:flex; flex-direction:column; gap:1.7rem; }
+  .pitem{ border-left:2px solid var(--green); padding-left:1.2rem; }
+  .ptitle{ margin:0 0 .5rem; font-weight:700; font-size:1.1rem; line-height:1.35; letter-spacing:-.015em; color:var(--ink); }
+  .pbody{ margin:0; color:var(--ink-soft); font-size:.99rem; line-height:1.58; max-width:62ch; }
+
+  /* ---- Diagnostic question list ---- */
+  .qintro{ margin:0 0 2rem; max-width:56ch; }
+  .qlist{ display:flex; flex-direction:column; gap:1.55rem; }
+  .qitem{ display:grid; grid-template-columns:auto 1fr; column-gap:1rem; }
+  .qnum{ font-weight:700; font-size:1.06rem; line-height:1.5; color:var(--green-deep); font-variant-numeric:tabular-nums; }
+  .qtext{ margin:0; font-weight:600; font-size:1.07rem; line-height:1.5; letter-spacing:-.011em; color:var(--ink); }
+  .qwhy{ grid-column:2; margin:.4rem 0 0; color:var(--ink-soft); font-size:.99rem; line-height:1.58; max-width:58ch; }
+  .qclose{ margin:2.3rem 0 0; max-width:56ch; }
+
+  /* ---- Print: decision-makers save and forward PDFs ---- */
+  @media print{
+    .nav{ display:none !important; }
+    .btn{ display:none !important; }
+    body{ background:#fff !important; }
+    .section--dark, .section--green, .footer{ background:#fff !important; color:#000 !important; }
+    .section--dark .kicker, .section--dark .soft, .footer, .footer-line .name{ color:#000 !important; }
+    .section--dark .tick, .tick{ background:#000 !important; }
+    .kicker{ color:#000 !important; }
+    .hl{ background:none !important; color:#000 !important; padding:0 !important; }
+    .beat-card{ box-shadow:none !important; border-color:#999 !important; }
+    a{ color:#000 !important; text-decoration:underline; }
+    .section{ padding-block:1.1rem !important; }
+    .honest{ padding-block:1.1rem !important; }
+    /* reveal + load animations must never hide printed content */
+    .js .reveal .wrap > *, .js .reveal .beats .beat-card, .js .hero .anim{
+      opacity:1 !important; transform:none !important; animation:none !important; transition:none !important;
+    }
+    .qitem, .pitem, .ritem, .beat-card, section{ break-inside:avoid; }
+  }
+
+  /* ============ MOTION ============ */
+  @media (prefers-reduced-motion: no-preference){
+    /* nav slide-in */
+    .js .nav{ transform:translateY(-100%); animation:navdrop .6s var(--ease) .1s forwards; }
+    @keyframes navdrop{ to{ transform:translateY(0); } }
+
+    /* hero load stagger */
+    .js .hero .anim{ opacity:0; transform:translateY(12px); animation:rise .8s var(--ease) forwards; }
+    .js .hero .d1{animation-delay:.15s;} .js .hero .d2{animation-delay:.26s;}
+    .js .hero .d3{animation-delay:.40s;} .js .hero .d4{animation-delay:.49s;}
+    .js .hero .d5{animation-delay:.58s;} .js .hero .d6{animation-delay:.67s;}
+    @keyframes rise{ to{ opacity:1; transform:none; } }
+
+    /* highlighter wipe on "faster" */
+    .js .hl{ background-size:0% 100%; animation:wipe .55s var(--ease) 1.05s forwards; }
+    @keyframes wipe{ to{ background-size:100% 100%; } }
+
+    /* scroll reveal with per-child stagger */
+    .js .reveal .wrap > *:not(.beats){ opacity:0; transform:translateY(14px); transition:opacity .6s var(--ease), transform .6s var(--ease); }
+    .js .reveal.in .wrap > *:not(.beats){ opacity:1; transform:none; }
+    .js .reveal.in .wrap > *:nth-child(1){ transition-delay:.02s; }
+    .js .reveal.in .wrap > *:nth-child(2){ transition-delay:.09s; }
+    .js .reveal.in .wrap > *:nth-child(3){ transition-delay:.16s; }
+    .js .reveal.in .wrap > *:nth-child(4){ transition-delay:.23s; }
+    .js .reveal.in .wrap > *:nth-child(5){ transition-delay:.30s; }
+    .js .reveal.in .wrap > *:nth-child(6){ transition-delay:.37s; }
+  .js .reveal.in .wrap > *:nth-child(7){ transition-delay:.44s; }
+  .js .reveal.in .wrap > *:nth-child(8){ transition-delay:.51s; }
+  .js .reveal.in .wrap > *:nth-child(9){ transition-delay:.58s; }
+    /* cards stagger */
+    .js .reveal .beats .beat-card{ opacity:0; transform:translateY(16px); transition:opacity .6s var(--ease), transform .6s var(--ease); }
+    .js .reveal.in .beats .beat-card{ opacity:1; transform:none; }
+    .js .reveal.in .beats .beat-card:nth-child(1){ transition-delay:.18s; }
+    .js .reveal.in .beats .beat-card:nth-child(2){ transition-delay:.28s; }
+  }
+
+  @media (max-width:480px){
+    .btn{ display:block; text-align:center; }
+    .nav-cta{ font-size:.86rem; padding:.55rem .95rem; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://valm.pro/#allan-valm",
+      "name": "Allan Valm",
+      "jobTitle": "AI Augmentation Partner",
+      "url": "https://valm.pro/",
+      "image": "https://valm.pro/allan-valm.jpg",
+      "email": "allan@valm.pro",
+      "telephone": "+37251989999",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Helmes",
+        "url": "https://www.helmes.com/"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/allanvalm"
+      ],
+      "knowsAbout": [
+        "AI governance",
+        "AI validation",
+        "AI production readiness",
+        "EU AI Act",
+        "DORA",
+        "regulated financial services",
+        "AI risk management",
+        "AI in insurance",
+        "AI in banking",
+        "AI-augmented workflow design",
+        "fractional AI advisory",
+        "fractional executive advisory"
+      ],
+      "description": "Allan Valm is an AI Augmentation Partner who helps business-unit owners in regulated financial services decide whether an AI system is ready for production. The seat is a weekly working session with on-call access, and specialist depth brought in when a decision needs it.",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Tallinn University of Technology",
+        "url": "https://taltech.ee/"
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "certification",
+        "name": "ISTQB Certified Tester"
+      },
+      "award": "The Golden Egg Awards"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://valm.pro/#service",
+      "name": "AI Augmentation Partner",
+      "url": "https://valm.pro/",
+      "provider": {
+        "@id": "https://valm.pro/#allan-valm"
+      },
+      "serviceType": "AI advisory and governance for regulated industries",
+      "description": "A retained advisory seat for business-unit owners in regulated financial services. One working session a week with on-call access, and specialist depth brought in when a decision needs it. A fixed monthly fee, from 5000 EUR, month to month.",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Business-unit owners in regulated financial services, including insurers, pension providers, banks, lenders and licensed fintechs"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Estonia"
+        },
+        {
+          "@type": "Country",
+          "name": "Latvia"
+        },
+        {
+          "@type": "Country",
+          "name": "Lithuania"
+        },
+        {
+          "@type": "Country",
+          "name": "Finland"
+        },
+        {
+          "@type": "Country",
+          "name": "Sweden"
+        },
+        {
+          "@type": "Country",
+          "name": "Norway"
+        },
+        {
+          "@type": "Country",
+          "name": "Denmark"
+        },
+        {
+          "@type": "Country",
+          "name": "Germany"
+        },
+        {
+          "@type": "Country",
+          "name": "Switzerland"
+        },
+        {
+          "@type": "Country",
+          "name": "Austria"
+        }
+      ],
+      "alternateName": [
+        "Fractional AI advisor",
+        "AI Augmentation Partner"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 5000,
+          "priceCurrency": "EUR",
+          "minPrice": 5000,
+          "unitText": "MON",
+          "billingDuration": 1,
+          "billingIncrement": 1
+        },
+        "availability": "https://schema.org/LimitedAvailability",
+        "description": "A fixed monthly fee, from 5000 EUR. Month to month, cancel anytime. The first session carries no fee."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top"><span class="nav-dot" aria-hidden="true"></span>Allan Valm</a>
+      <a class="nav-cta" href="mailto:allan@valm.pro?subject=Bringing%20one%20decision&amp;body=Hi%20Allan%2C%0D%0A%0D%0AHere%20is%20the%20live%20AI%20decision%20I%20am%20weighing%2C%20and%20what%20is%20at%20stake%3A%0D%0A%0D%0A%0D%0AA%20little%20context%20%28sector%20and%20stage%29%3A%0D%0A">Bring one decision</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top" role="banner">
+    <div class="wrap">
+      <p class="eyebrow anim d1">Allan Valm · AI Augmentation Partner</p>
+      <h1 class="hero-head anim d2">Move <span class="hl">faster</span> without losing control.</h1>
+      <p class="subhead anim d3">A weekly working session on the AI decisions that matter, plus me on call, without the cost of a full-time hire.</p>
+      <p class="qualifier anim d4">For business-unit owners in regulated industries, especially in financial services.</p>
+      <div class="hero-cta">
+        <a class="btn anim d5" href="mailto:allan@valm.pro?subject=Bringing%20one%20decision&amp;body=Hi%20Allan%2C%0D%0A%0D%0AHere%20is%20the%20live%20AI%20decision%20I%20am%20weighing%2C%20and%20what%20is%20at%20stake%3A%0D%0A%0D%0A%0D%0AA%20little%20context%20%28sector%20and%20stage%29%3A%0D%0A">Bring one decision</a>
+        <p class="micro anim d6">Bring one real decision you are facing now.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section reveal" aria-labelledby="s-situation">
+      <div class="wrap">
+        <p class="kicker">The situation</p>
+        <span class="tick" aria-hidden="true"></span>
+        <h2 class="head" id="s-situation">You have AI that works in a demo.</h2>
+        <p>The question is whether it survives contact with real operations, with an auditor, with a bad day. In a regulated business, that gap is where money and reputation are lost.</p>
+        <p>The market is loud with AI enthusiasm. What helps is someone who has stood at this crossroads before and can tell you which way it usually goes.</p>
+      </div>
+    </section>
+
+    <section class="section reveal" id="patterns" aria-labelledby="s-patterns">
+      <div class="wrap">
+        <p class="kicker">Patterns</p>
+        <span class="tick" aria-hidden="true"></span>
+        <h2 class="head" id="s-patterns">What I keep seeing.</h2>
+        <p class="qintro soft">The same few failures, across different firms and different use cases. None of them show up in the demo.</p>
+        <div class="plist">
+          <div class="pitem">
+            <p class="ptitle">The demo is the cheap part.</p>
+            <p class="pbody">The build gets quoted. Running it, monitoring it and answering for it does not. A feature that costs little to prototype can be expensive to operate safely in a business-critical system. Price a year of running it before you commit.</p>
+          </div>
+          <div class="pitem">
+            <p class="ptitle">Nobody owns the running cost.</p>
+            <p class="pbody">AI costs drift when no one is accountable for them. The largest model gets used for work a smaller one would handle. Context gets re-sent instead of reused. Experiments stay running in live systems. Put a number on cost per case before you scale, and read the bill every month.</p>
+          </div>
+          <div class="pitem">
+            <p class="ptitle">Lock-in hides in the wiring.</p>
+            <p class="pbody">Teams worry about picking the wrong model. The cost of leaving is rarely the model. It is the data, the prompts and the workflow wired so tightly to one vendor that moving means starting over. Keep a thin layer between your systems and any single provider, favour portable data and put exit terms in the contract.</p>
+          </div>
+          <div class="pitem">
+            <p class="ptitle">The evidence gets built last.</p>
+            <p class="pbody">Proof that the model works and proof that it complies are treated as two projects, and the second one starts after go-live. Build them as one deliverable. Under the EU AI Act and DORA that is the difference between a short conversation with an auditor and a long one.</p>
+          </div>
+          <div class="pitem">
+            <p class="ptitle">Existing controls do not cover the new attack surface.</p>
+            <p class="pbody">Prompt injection is the gap that surprises people: hidden instructions inside a document, a web page or a user message that push the model to act against your intent. Treat every input the model reads as untrusted, limit what it can do on its own and keep a person in the loop for anything that moves money or data. Convincing text, voices and images are cheap to produce now, so identity checks that once relied on appearances need rethinking.</p>
+          </div>
+          <div class="pitem">
+            <p class="ptitle">No one took a baseline.</p>
+            <p class="pbody">The gain is real and it cannot be shown. Decide what you are measuring before you start, measure the same thing after and count the cost of building and maintaining it. A return your finance team would sign off without conditions is the only kind that counts.</p>
+          </div>
+          <div class="pitem">
+            <p class="ptitle">AI gets added to a broken process.</p>
+            <p class="pbody">That gives you a faster broken process. Map how the work flows today, find the step where volume, delay or error accumulates and redesign the flow around what the model does well. Keep your people on the judgment and the exceptions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="s-get">
+      <div class="wrap">
+        <p class="kicker">What you get</p>
+        <span class="tick" aria-hidden="true"></span>
+        <h2 class="head" id="s-get">Two steps, in order.</h2>
+        <div class="beats">
+          <div class="beat-card">
+            <p class="beat-label">First · my read of the situation</p>
+            <p>You bring a real decision. I tell you where you are, what is normal for a firm at your stage and the crossroads you are actually standing at. What I have seen go right and wrong, applied to your situation in an hour.</p>
+          </div>
+          <div class="beat-card">
+            <p class="beat-label">Then · specialist depth</p>
+            <p>When a decision earns it, I bring the right specialist from a multidisciplinary team. Domain, validation, compliance and engineering, on call when your decision needs them. Proof and controls get built together, one deliverable that serves validation and compliance at once.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark honest reveal" aria-labelledby="s-honest">
+      <div class="wrap">
+        <p class="kicker">The honest part</p>
+        <span class="tick" aria-hidden="true"></span>
+        <h2 class="head" id="s-honest">Sometimes the answer is no.</h2>
+        <p>Sometimes the honest read is to wait, or to walk away. A retained partner can say that and keep the seat. My fee is the same whether you build or hold, so nothing is pulling me toward a yes.</p>
+        <p>That is the point of the seat.</p>
+      </div>
+    </section>
+
+    <section class="section reveal" id="start" aria-labelledby="s-start">
+      <div class="wrap">
+        <p class="kicker">How it starts</p>
+        <span class="tick" aria-hidden="true"></span>
+        <h2 class="head" id="s-start">How it starts.</h2>
+        <p>The first session is where we both decide whether a seat makes sense. You bring one real decision you are facing now. You leave with a clear view of where you are and what to do next, whether or not we go further. The first session carries no fee. What it asks of you is a real decision and an honest hour.</p>
+        <p>If it earns a standing seat, we continue month to month. One working session a week. On-call access between. A fixed monthly fee, from 5000 EUR. Cancel anytime. You stay for as long as it is useful.</p>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="s-boundary">
+      <div class="wrap">
+        <p class="kicker">Scope</p>
+        <span class="tick" aria-hidden="true"></span>
+        <h2 class="head" id="s-boundary">What I do not do.</h2>
+        <p>The seat is judgment you can act on. When you decide to build or scale, <a href="https://www.helmes.com" target="_blank" rel="noopener">Helmes</a> takes it from there as the firm.</p>
+        <p class="soft">The read is experienced advice to inform your decision. Your formal compliance sign-off and legal advice come from the specialists you already retain for those.</p>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="s-who">
+      <div class="wrap">
+        <p class="kicker">Who I am</p>
+        <span class="tick" aria-hidden="true"></span>
+        <img class="portrait" src="portrait.jpg" width="840" height="560" loading="lazy" decoding="async" alt="Allan Valm, AI Augmentation Partner and Partner at Helmes, seated in a dark suit and white shirt">
+        <h2 class="head" id="s-who">Who I am.</h2>
+        <p>I am Allan Valm, a Business Area Leader at <a href="https://www.helmes.com" target="_blank" rel="noopener">Helmes</a>, a software group of around 1,500 people across the Baltics and beyond. Watching business-critical software succeed and fail taught me to read the difference early.</p>
+        <p>The seat is me. When you decide to build, Helmes delivers as the firm. You get one person's judgment with an institution behind it.</p>
+      </div>
+    </section>
+
+    <section class="section reveal" id="record" aria-labelledby="s-record">
+      <div class="wrap">
+        <p class="kicker">Track record</p>
+        <span class="tick" aria-hidden="true"></span>
+        <h2 class="head" id="s-record">Where this comes from.</h2>
+        <p class="qintro soft">Twenty years in business-critical software, most of it in regulated industries.</p>
+        <div class="rlist">
+          <div class="ritem">
+            <p class="rorg">Helmes · 2025 to now</p>
+            <p class="rbody">I lead two product teams building AI-augmented workflows and business-critical systems for regulated clients, among them the Estonian Tax and Customs Board, the Ministry of Foreign Affairs and Enterprise Estonia.</p>
+          </div>
+          <div class="ritem">
+            <p class="rorg">Digital Elegance · 2023 to now</p>
+            <p class="rbody">With Enterprise Estonia I have run a four-year service design masterclass for eighty Estonian companies, including teams at the Port of Tallinn. The work was helping them design and validate B2B services before committing to build them.</p>
+          </div>
+          <div class="ritem">
+            <p class="rorg">Mobi Lab · 2017 to 2023</p>
+            <p class="rbody">I led product teams delivering software for Telia, Inbank, Veriff and Apollo Group. I also founded Reality Maker, an augmented reality platform for education, secured over 600,000 EUR in funding and scaled it with Ericsson into the US and UK. Those decisions were mine to make and mine to answer for.</p>
+          </div>
+          <div class="ritem">
+            <p class="rorg">Inbank · 2015 to 2017</p>
+            <p class="rbody">I built and led the bank&#x27;s first software development team. The processes we put in place passed external compliance audits on the first attempt. Its first deposit product launched in three months, met its financial goals within two weeks and scaled to Poland and Latvia within six months.</p>
+          </div>
+          <div class="ritem">
+            <p class="rorg">Playtech · 2010 to 2014</p>
+            <p class="rbody">I led the design of responsible-gambling and loyalty features for a casino management platform used by Coral, Ladbrokes and William Hill. A testing framework I introduced cut defects by half across major releases.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="questions" aria-labelledby="s-questions">
+      <div class="wrap">
+        <p class="kicker">The first session</p>
+        <span class="tick" aria-hidden="true"></span>
+        <h2 class="head" id="s-questions">The questions I will ask you.</h2>
+        <p class="qintro soft">These are the questions the first session works through. Take them into your own meeting and use them without me.</p>
+        <div class="qlist">
+          <div class="qitem">
+            <span class="qnum" aria-hidden="true">1</span>
+            <p class="qtext">What decision are you actually making, and by when?</p>
+            <p class="qwhy">Many AI conversations contain no decision at all. Naming it changes what the room talks about.</p>
+          </div>
+          <div class="qitem">
+            <span class="qnum" aria-hidden="true">2</span>
+            <p class="qtext">What happens when the model is wrong?</p>
+            <p class="qwhy">How often, how visibly and what it costs. Every model is wrong sometimes, so plan for the day it is.</p>
+          </div>
+          <div class="qitem">
+            <span class="qnum" aria-hidden="true">3</span>
+            <p class="qtext">Who answers for it?</p>
+            <p class="qwhy">A named person, not a committee. Regulated work needs someone accountable for the outcome.</p>
+          </div>
+          <div class="qitem">
+            <span class="qnum" aria-hidden="true">4</span>
+            <p class="qtext">What would you have to show an auditor, and could you show it today?</p>
+            <p class="qwhy">Under the EU AI Act and DORA this question arrives late and costs the most when it does.</p>
+          </div>
+          <div class="qitem">
+            <span class="qnum" aria-hidden="true">5</span>
+            <p class="qtext">What does a year of running this cost?</p>
+            <p class="qwhy">The build gets quoted. The cost of operating, monitoring and fixing it rarely does.</p>
+          </div>
+          <div class="qitem">
+            <span class="qnum" aria-hidden="true">6</span>
+            <p class="qtext">Who owns it once it is live?</p>
+            <p class="qwhy">Models drift and data changes. Watching for that is a standing job, and it needs an owner.</p>
+          </div>
+          <div class="qitem">
+            <span class="qnum" aria-hidden="true">7</span>
+            <p class="qtext">What would make you stop?</p>
+            <p class="qwhy">Agree the answer before you start. It is the hardest question here and the most useful one.</p>
+          </div>
+        </div>
+        <p class="qclose soft">If the answers come easily, you are in better shape than most. If two or three of them stall, that is the conversation worth having.</p>
+      </div>
+    </section>
+
+    <section class="section section--green close reveal" aria-labelledby="s-close">
+      <div class="wrap">
+        <h2 class="head" id="s-close">One decision. One session.</h2>
+        <p>Bring the AI decision that is keeping you awake at night. Leave knowing where you stand. There is nothing to pitch. Move faster without losing control.</p>
+        <a class="btn btn--dark" href="mailto:allan@valm.pro?subject=Bringing%20one%20decision&amp;body=Hi%20Allan%2C%0D%0A%0D%0AHere%20is%20the%20live%20AI%20decision%20I%20am%20weighing%2C%20and%20what%20is%20at%20stake%3A%0D%0A%0D%0A%0D%0AA%20little%20context%20%28sector%20and%20stage%29%3A%0D%0A">Bring one decision</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer-line">
+        <span class="name">Allan Valm</span> · AI Augmentation Partner<br>
+        <a href="mailto:allan@valm.pro">allan@valm.pro</a> · <a href="tel:+37251989999">+372 5198 9999</a> · <a href="https://www.linkedin.com/in/allanvalm" rel="noopener" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+<script>
+  document.documentElement.classList.add('js');
+
+  // scroll reveal
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window){
+    var ro = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -12% 0px', threshold:0.08});
+    reveals.forEach(function(el){ ro.observe(el); });
+  } else { reveals.forEach(function(el){ el.classList.add('in'); }); }
+
+  // nav: transparent over hero, solid on scroll
+  var nav = document.getElementById('nav');
+  var ticking = false;
+  function onScroll(){
+    if (!ticking){
+      window.requestAnimationFrame(function(){
+        nav.classList.toggle('nav--solid', window.scrollY > 24);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+</script>
+</body>
+</html>
