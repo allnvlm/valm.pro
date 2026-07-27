@@ -8,8 +8,11 @@ Live at https://valm.pro
 
 | File | Purpose |
 |---|---|
-| `index.html` | The main page. Inline CSS and JS, no build step. |
-| `privacy.html` | Privacy notice. Reuses the same head and stylesheet as `index.html`. |
+| `index.html` | The main page. |
+| `privacy.html` | Privacy notice. |
+| `404.html` | Not-found page. GitHub Pages serves this automatically. |
+| `site.css` | The whole design system. Every page links it. Edit styles here only. |
+| `site.js` | Shared runtime: consent banner, sticky nav, scroll reveal, analytics events. Edit behaviour here only. |
 | `portrait.jpg` | Portrait shown in the Who I am section, 840px wide. |
 | `allan-valm.jpg` | Larger portrait referenced by the structured data. |
 | `allan-valm-og.jpg` | Social share card, 1200 x 630. |
@@ -73,45 +76,29 @@ Fonts are self-hosted, so the page makes no third-party request for typography a
 
 ## Analytics events
 
-Seven events are sent through `gtag`, so Consent Mode governs them. With consent denied they travel as cookieless pings and set nothing on the device.
+Four events are sent through `gtag`, so Consent Mode governs them. With consent denied they travel as cookieless pings and set nothing on the device.
 
 | Event | Parameters | What it answers |
 |---|---|---|
 | `section_view` | `section` | How far people read. Fires once per section: `patterns`, `what_you_get`, `honest_part`, `how_it_starts`, `track_record`, `first_session`, `contact` |
-| `cta_click` | `location` (`nav`, `hero`) | Which call to action moved them |
-| `contact_start` | none | Someone put the cursor in the form |
-| `contact_error` | `fields` | Which fields failed validation, so friction is visible |
-| `generate_lead` | `method` (`contact_form`, `email_fallback`) | The conversion. A GA4 recommended event name, so it appears in standard reports |
-| `contact_send_failed` | none | The provider rejected a submission. Watch this one, because it means a lost lead |
+| `generate_lead` | `method` (`email`), `location` (`nav`, `hero`, `close`) | The conversion signal, and which call to action produced it. A GA4 recommended event name, so it appears in standard reports |
 | `contact_link_click` | `method` (`email`, `phone`, `linkedin`) | People who skip the form |
 
 **The question this is built to answer.** Pair `section_view` with `generate_lead` in an exploration. If visitors who reach `track_record` convert at a higher rate than those who do not, the evidence is doing work and more of it is worth adding. If the rate is flat, the page converts on the offer alone. That is a real strategic question rather than a vanity metric.
 
 **Mark `generate_lead` as a key event** in GA4 under Admin, Events, so it appears as a conversion.
 
-**Two things to avoid.** GA4 enhanced measurement already tracks outbound clicks and 90 percent scroll, so no custom events duplicate those. It can also track form interactions automatically, which would double-count against `contact_start` and `generate_lead`. If form interaction tracking is enabled in the data stream, turn it off. And since GTM is present alongside gtag, do not rebuild these events as GTM tags for the same property.
+**An honest caveat on `generate_lead`.** With email contact, this measures the click that opened the email program. It cannot know whether the message was actually sent, so treat it as intent rather than a confirmed enquiry, and compare it against what arrives in the inbox.
 
-## Contact form
+**Two things to avoid.** GA4 enhanced measurement already tracks outbound clicks and 90 percent scroll, so no custom events duplicate those. And since GTM is present alongside gtag, do not rebuild these events as GTM tags for the same property.
 
-Every call to action scrolls to the form in the closing panel. The form collects a name, an email address, an optional organisation and sector, and the decision the visitor is weighing. That last field is deliberate. It keeps the qualification step that the old prefilled email created.
+## Contact
 
-The form needs a backend, because GitHub Pages serves static files only. One line controls this, near the bottom of `index.html`:
+Contact is by email. Every call to action, in the nav, the hero and the closing panel, opens the visitor's own email program with the subject line `AI Augmentation Partner` and nothing else filled in. The footer email link matches, so one mail rule catches every route.
 
-```js
-var ENDPOINT = '';
-```
+A contact form was built and then removed on purpose. GitHub Pages serves static files only, so a form needs a third-party processor. Until one is wired the form has to fall back to opening an email, which means it validates what someone types and then discards it. That is worse than a plain email link, and it is unfamiliar behaviour for the visitor. The subject line is set in one place, the `SUBJECT` constant in the analytics block of `index.html`.
 
-While it is empty the form validates the input and then opens a prefilled email, so the button is never dead. Set it to the provider's endpoint and the form posts JSON instead:
-
-```json
-{ "name": "...", "email": "...", "organisation": "...", "decision": "..." }
-```
-
-**Choosing a provider.** The only criteria that matter here are EU data residency and a signed data processing agreement, because the site's whole argument is about handling regulated data properly. Verify both on the provider's own legal pages rather than in a comparison article, since most of those are written by the vendors being compared. Self-hosting the handler is the other option if full control is wanted.
-
-Spam is handled without a CAPTCHA: a hidden honeypot field and a check that the form was not submitted within three seconds of loading. No third-party bot service, and no extra processor.
-
-Once a provider is chosen, name it in `privacy.html` under "The contact form", where a placeholder sentence is waiting.
+If a form is ever reinstated, the requirement is a provider with EU data residency and a signed data processing agreement, verified on the provider's own legal pages rather than in a comparison article. The provider then has to be named in `privacy.html`.
 
 ## Privacy notice
 
@@ -121,9 +108,22 @@ Once a provider is chosen, name it in `privacy.html` under "The contact form", w
 2. **Postal address.** Only a city, an email and a phone number are given. A full postal address is the usual expectation for a data controller, so decide whether to add one.
 3. **Accuracy over time.** If any tag, tool or host changes, the notice changes with it, along with the date at the top.
 
-## Editing
+## Architecture
 
-Everything lives in `index.html`. The CSS variables at the top hold the whole design system, so colour and spacing changes happen in one place.
+Three HTML pages share one stylesheet and one runtime. Nothing is duplicated between pages, which is deliberate: an earlier version inlined both into every page and the two pages had drifted apart within a week.
+
+- **Styles** live in `site.css` only. The CSS variables at the top hold the whole design system, so colour and spacing changes happen in one place.
+- **Behaviour** lives in `site.js` only. It loads with `defer` and every block guards on the elements it needs, so the same file is safe on all three pages.
+- **Asset paths are root-relative** (`/site.css`, `/site.js`, `/fonts/...`). This matters for `404.html`, which GitHub Pages serves at whatever URL was requested, so relative paths would break at any depth.
+- **Three small scripts stay inline in the head** and must remain there, in this order: the `js` class, the Consent Mode defaults, then the Google tags. Consent has to be set before any Google script loads, so moving these into `site.js` would break consent.
+
+### The GTM noscript iframe was removed on purpose
+
+The standard GTM snippet includes a `<noscript>` iframe for visitors with JavaScript disabled. It was removed, because with JavaScript off the Consent Mode defaults never run, so any tag firing through that iframe would fire with no consent state at all. GA4 cannot work without JavaScript anyway, so the iframe cost nothing to drop and closed a compliance gap.
+
+If GTM is ever used to fire real tags, set the default consent state inside the GTM container as well, under container settings, rather than relying only on the page script. Then the iframe can be restored safely.
+
+## Editing
 
 Before changing any copy, read the voice constraints in the accompanying copy and design brief. Two rules matter most. State a fact and let the reader draw the conclusion, because this audience distrusts self-description. And keep the plain-English rule, because most readers use English as a second language.
 
