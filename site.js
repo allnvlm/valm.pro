@@ -68,28 +68,26 @@
       });
     }
 
-    // 2. Which call to action opened the email
-    document.querySelectorAll('a[href^="mailto:allan@valm.pro?subject="]').forEach(function(a){
+    // 2. Intent, then the lead itself
+    // Buttons only move the reader to the contact section, so they are intent
+    document.querySelectorAll('a[href="#contact"]').forEach(function(a){
       a.addEventListener('click', function(){
-        var where = a.classList.contains('nav-cta') ? 'nav'
-                  : a.closest('.hero') ? 'hero'
-                  : a.closest('.footer') ? 'footer' : 'close';
-        track('generate_lead', { method: 'email', location: where });
+        track('cta_click', { location: a.classList.contains('nav-cta') ? 'nav' : 'hero' });
       });
     });
 
-    // 3. Footer contact routes
-    var routes = { 'mailto:': 'email', 'tel:': 'phone' };
-    document.querySelectorAll('.footer a').forEach(function(a){
-      var href = a.getAttribute('href') || '';
-      var method = null;
-      Object.keys(routes).forEach(function(pre){ if (href.indexOf(pre) === 0) method = routes[pre]; });
-      if (href.indexOf('linkedin.com') > -1) method = 'linkedin';
-      if (!method) return;
-      a.addEventListener('click', function(){ track('contact_link_click', { method: method }); });
+    // Choosing an actual route is the lead
+    document.querySelectorAll('a[data-route]').forEach(function(a){
+      a.addEventListener('click', function(){
+        track('generate_lead', {
+          method: a.getAttribute('data-route'),
+          location: a.closest('.footer') ? 'footer' : 'contact'
+        });
+      });
     });
 
-    // 4. Consent decisions, so the acceptance rate is known
+
+    // 3. Consent decisions, so the acceptance rate is known
     ['consent-yes','consent-no'].forEach(function(id){
       var el = document.getElementById(id);
       if (el) el.addEventListener('click', function(){

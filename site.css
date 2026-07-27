@@ -65,6 +65,9 @@
   .section--green{ background:var(--green); color:var(--ink); }
   .section--dark .kicker{ color:var(--green); }
   .section--dark .tick{ background:var(--green); }
+  /* on the green panel the accent is invisible, so the label and bar go charcoal */
+  .section--green .kicker{ color:var(--charcoal); }
+  .section--green .tick{ background:var(--charcoal); }
 
   /* ---- Type roles ---- */
   .kicker{ font-weight:600; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color:var(--green); margin:0 0 1.1rem; }
@@ -88,9 +91,6 @@
   .btn:active{ transform:translateY(0); }
   a:focus-visible, .btn:focus-visible{ outline:3px solid var(--charcoal); outline-offset:3px; }
   .section--dark .btn:focus-visible{ outline-color:var(--green); }
-  .btn--dark{ background:var(--charcoal); color:#fff; }
-  .btn--dark:hover{ background:#24262F; box-shadow:0 8px 22px rgba(47,49,63,.30); }
-  .btn--dark:focus-visible{ outline-color:var(--charcoal); }
 
   /* ---- Hero ---- */
   .hero{ padding-top:clamp(5.5rem,12vh,9rem); padding-bottom:clamp(4rem,9vw,6.5rem); }
@@ -105,7 +105,6 @@
   .subhead{ font-size:clamp(1.16rem,1.05rem + 0.45vw,1.35rem); line-height:1.48; color:var(--ink-soft); margin:0 0 1rem; max-width:40ch; }
   .qualifier{ font-size:.96rem; line-height:1.5; color:var(--ink-soft); margin:0 0 2.3rem; max-width:44ch; }
   .hero-cta{ display:flex; flex-direction:column; align-items:flex-start; gap:1rem; }
-  .micro{ font-size:.92rem; line-height:1.55; color:var(--ink-soft); margin:0; max-width:38ch; }
 
   /* ---- Two beats as cards ---- */
   .beats{ display:flex; flex-direction:column; gap:1.15rem; }
@@ -137,6 +136,15 @@
   .footer-line .name{ color:var(--on-dark); font-weight:600; }
   .footer a{ color:var(--green); text-decoration:none; }
   .footer a:hover{ text-decoration:underline; }
+
+  /* ---- Contact routes ---- */
+  .routes{ margin-top:2rem; display:flex; flex-direction:column; gap:1.25rem; }
+  .route{ border-left:2px solid var(--charcoal); padding-left:1.2rem; }
+  .route-label{ margin:0 0 .35rem !important; font-weight:600; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color:var(--charcoal); opacity:.72; }
+  .route-value{ margin:0 !important; font-weight:700; font-size:clamp(1.12rem,1rem + .5vw,1.3rem); letter-spacing:-.014em; }
+  .route-value a{ color:var(--charcoal); text-decoration:underline; text-underline-offset:.2em; text-decoration-thickness:1px; }
+  .route-value a:hover{ text-decoration-thickness:2px; }
+  .route-value a:focus-visible{ outline:3px solid var(--charcoal); outline-offset:3px; }
 
   /* ---- Consent banner ---- */
   .consent{
@@ -191,6 +199,7 @@
   @media print{
     .nav{ display:none !important; }
     .consent{ display:none !important; }
+    .route{ break-inside:avoid; }
     .btn{ display:none !important; }
     body{ background:#fff !important; }
     .section--dark, .section--green, .footer{ background:#fff !important; color:#000 !important; }
@@ -219,7 +228,7 @@
     .js .hero .anim{ opacity:0; transform:translateY(12px); animation:rise .8s var(--ease) forwards; }
     .js .hero .d1{animation-delay:.15s;} .js .hero .d2{animation-delay:.26s;}
     .js .hero .d3{animation-delay:.40s;} .js .hero .d4{animation-delay:.49s;}
-    .js .hero .d5{animation-delay:.58s;} .js .hero .d6{animation-delay:.67s;}
+    .js .hero .d5{animation-delay:.58s;}
     @keyframes rise{ to{ opacity:1; transform:none; } }
 
     /* highlighter wipe on "faster" */

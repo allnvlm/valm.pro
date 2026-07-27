@@ -76,25 +76,29 @@ Fonts are self-hosted, so the page makes no third-party request for typography a
 
 ## Analytics events
 
-Four events are sent through `gtag`, so Consent Mode governs them. With consent denied they travel as cookieless pings and set nothing on the device.
+Five events are sent through `gtag`, so Consent Mode governs them. With consent denied they travel as cookieless pings and set nothing on the device.
 
 | Event | Parameters | What it answers |
 |---|---|---|
 | `section_view` | `section` | How far people read. Fires once per section: `patterns`, `what_you_get`, `honest_part`, `how_it_starts`, `track_record`, `first_session`, `contact` |
-| `generate_lead` | `method` (`email`), `location` (`nav`, `hero`, `close`) | The conversion signal, and which call to action produced it. A GA4 recommended event name, so it appears in standard reports |
-| `contact_link_click` | `method` (`email`, `phone`, `linkedin`) | People who skip the form |
+| `cta_click` | `location` (`nav`, `hero`) | Intent. Someone moved toward the contact section |
+| `generate_lead` | `method` (`email`, `phone`, `linkedin`), `location` (`contact`, `footer`) | The conversion, and which route they chose. A GA4 recommended event name, so it appears in standard reports |
 
 **The question this is built to answer.** Pair `section_view` with `generate_lead` in an exploration. If visitors who reach `track_record` convert at a higher rate than those who do not, the evidence is doing work and more of it is worth adding. If the rate is flat, the page converts on the offer alone. That is a real strategic question rather than a vanity metric.
 
 **Mark `generate_lead` as a key event** in GA4 under Admin, Events, so it appears as a conversion.
 
-**An honest caveat on `generate_lead`.** With email contact, this measures the click that opened the email program. It cannot know whether the message was actually sent, so treat it as intent rather than a confirmed enquiry, and compare it against what arrives in the inbox.
+**An honest caveat on `generate_lead`.** This measures the click on a route, not a delivered message. Nobody can tell whether the email was sent or the call connected, so treat it as strong intent and compare it against what actually reaches you. The gap between `cta_click` and `generate_lead` is the more useful number: it shows how many reach the contact section and then choose nothing.
 
 **Two things to avoid.** GA4 enhanced measurement already tracks outbound clicks and 90 percent scroll, so no custom events duplicate those. And since GTM is present alongside gtag, do not rebuild these events as GTM tags for the same property.
 
 ## Contact
 
-Contact is by email. Every call to action, in the nav, the hero and the closing panel, opens the visitor's own email program with the subject line `AI Augmentation Partner` and nothing else filled in. The footer email link matches, so one mail rule catches every route.
+Contact happens in the closing section, which lists three routes and lets the visitor choose: email, phone and LinkedIn. The buttons in the nav and the hero are navigation only. They scroll to `#contact` rather than triggering anything.
+
+Both email links carry the subject `AI Augmentation Partner`, set by the `SUBJECT` constant in `index.html`, so one mail rule catches every route.
+
+Each route link carries a `data-route` attribute, which is what the analytics use to tell email, phone and LinkedIn apart. Keep it on any route added later.
 
 A contact form was built and then removed on purpose. GitHub Pages serves static files only, so a form needs a third-party processor. Until one is wired the form has to fall back to opening an email, which means it validates what someone types and then discards it. That is worse than a plain email link, and it is unfamiliar behaviour for the visitor. The subject line is set in one place, the `SUBJECT` constant in the analytics block of `index.html`.
 
