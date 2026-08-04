@@ -10,11 +10,11 @@ Last synced: 27 July 2026. Home page: about 1,456 words.
 
 ## 1. The offering
 
-A retained advisory seat for business-unit owners in regulated industries, especially financial services. One working session a week, on-call access between, and specialist depth brought in from Helmes when a decision needs it.
+A retained advisory seat for business-unit owners in regulated industries, especially financial services. One working session a week, quick calls between, and specialist depth brought in from Helmes when a decision needs it.
 
 **Positioning promise, verbatim brand copy:** Move faster without losing control.
 
-**Price:** a fixed monthly fee, from 5000 EUR plus VAT. Month to month, cancel anytime. The first session carries no fee.
+**Price:** a fixed monthly fee, from 5000 EUR plus VAT. Month to month, for as long as it is useful. The first session carries no fee.
 
 **Contact:** allan@valm.pro · +372 5198 9999 · https://www.linkedin.com/in/allanvalm
 
@@ -73,7 +73,7 @@ AI costs drift when no one is accountable for them. The largest model gets used 
 Teams worry about picking the wrong model. The cost of leaving is rarely the model. It is the data, the prompts and the workflow wired so tightly to one vendor that moving means starting over. Keep a thin layer between your systems and any single provider, favour portable data and put exit terms in the contract.
 
 **The evidence gets built last.**
-Proof that the model works and proof that it complies are treated as two projects, and the second one starts after go-live. Build them as one deliverable. Under the EU AI Act and DORA that is the difference between a short conversation with an auditor and a long one.
+Proof that the model works and proof that it complies are treated as two projects, and the second one starts after go-live. Build them as one deliverable. Under the EU AI Act and DORA that evidence is what an auditor asks to see. Assembling it afterwards turns a review into a project of its own.
 
 **Existing controls do not cover the new attack surface.**
 Prompt injection is the gap that surprises people: hidden instructions inside a document, a web page or a user message that push the model to act against your intent. Treat every input the model reads as untrusted, limit what it can do on its own and keep a person in the loop for anything that moves money or data. Convincing text, voices and images are cheap to produce now, so identity checks that once relied on appearances need rethinking.
@@ -89,11 +89,11 @@ That gives you a faster broken process. Map how the work flows today, find the s
 
 **Card 1 · First · my read of the situation**
 
-You bring a real decision. I tell you where you are, what is normal for a firm at your stage and the crossroads you are actually standing at. What I have seen go right and wrong, applied to your situation in an hour.
+You bring a real decision. I tell you where you are, what is doable for a firm at your stage and the crossroads you are actually standing at. What I have seen go right and wrong, applied to your situation in an hour.
 
 **Card 2 · Then · specialist depth**
 
-Knowing who to bring in from the multidisciplinary team, and when, is most of the value to make a decision with confidence. On-demand expertise to get a complete understanding of business needs, customer expectations, system constraints and solution delivery. And not to forget AI model validation, cybersecurity and the evidence your team and an auditor will ask for.
+Knowing who to bring in from the multidisciplinary team, and when, is most of the value to make a decision with confidence. On-demand expertise to get a complete understanding of business needs, customer expectations, system constraints and solution delivery. And not to forget AI model output validation, cybersecurity and the evidence your team and an auditor will ask for.
 
 The card describes scope, never price. It must not be edited into anything implying a specialist's time is free.
 
@@ -107,16 +107,16 @@ That is the point of the seat.
 ### How it starts
 **Header:** How it starts.
 
-The first session is where we both decide whether a seat makes sense. You bring one real decision you are facing now. You leave with a clear view of where you are and what to do next, whether or not we go further. The first session carries no fee. What it asks of you is a real decision and an honest hour.
+The first session is where we both decide whether a seat makes sense. You bring one real decision you are facing now. You leave with a clear view of where you are and what to do next, whether or not we go further. The first session carries no fee. What it asks of you is a real decision with real impact.
 
-If it earns a standing seat, we continue month to month. One working session a week. On-call access between. A fixed monthly fee, from 5000 EUR plus VAT. Cancel anytime. You stay for as long as it is useful.
+If it earns a standing seat, we continue month to month. One working session a week and quick calls between. A fixed monthly fee, from 5000 EUR plus VAT, for as long as it is useful for you.
 
 ### Scope
 **Header:** What I do not do.
 
 The seat is judgment you can act on. When you decide to build or scale, [Helmes](https://www.helmes.com) takes it from there as the firm.
 
-The read is experienced advice to inform your decision. Your formal compliance sign-off and legal advice come from the specialists you already retain for those.
+The read is advice to inform your decision. I do not sign anything off. Your compliance officer and your lawyers do that.
 
 ### Who I am
 **Header:** Who I am. Portrait sits above it.
@@ -140,7 +140,7 @@ Leading a business area with two product teams, around twenty senior specialists
 Running a four-year service design masterclass with Enterprise Estonia for eighty Estonian companies, including teams at the Port of Tallinn. The work was helping them design and validate B2B services before committing to build them.
 
 **Mobi Lab · 2017 to 2023**
-Led product teams delivering software for Telia, Inbank, Veriff and Apollo Group. Founded Reality Maker, an augmented reality platform for education, secured over 600,000 EUR in funding and scaled it with Ericsson into the US and UK. Those decisions were mine to make and mine to answer for.
+Led product teams delivering software for Telia, Inbank, Veriff and Apollo Group. Founded Reality Maker, an augmented reality platform for education, secured over 600,000 EUR in funding and scaled it with Ericsson into the US and UK.
 
 **Inbank · 2015 to 2017**
 Built and led the bank's first software development team. The processes we put in place passed external compliance audits on the first attempt. Its first deposit product launched in three months, met its financial goals within two weeks and scaled to Poland and Latvia within six months.
@@ -155,11 +155,11 @@ Entries open with the verb and carry no "I". Current roles take the gerund, past
 **Intro:** These are the questions the first session works through. Take them into your own meeting and use them without me.
 
 1. **What decision are you actually making, and by when?**
-   Many AI conversations contain no decision at all. Naming it changes what the room talks about.
+   Many AI conversations contain no decision at all. Naming it helps the team focus on what matters.
 2. **What happens when the model is wrong?**
    How often, how visibly and what it costs. Every model is wrong sometimes, so plan for the day it is.
 3. **Who answers for it?**
-   A named person, not a committee. Regulated work needs someone accountable for the outcome.
+   Approval and accountability get confused. Several people can approve an AI system. One person has to answer for it, and should know that before go-live.
 4. **What would you have to show an auditor, and could you show it today?**
    Under the EU AI Act and DORA this question arrives late and costs the most when it does.
 5. **What does a year of running this cost?**
