@@ -9,6 +9,7 @@ Live at https://valm.pro
 | File | Purpose |
 |---|---|
 | `index.html` | Home page. |
+| `production-readiness.html` | Production readiness for AI-built solutions, a fixed-price service page. |
 | `privacy.html` | Privacy notice. |
 | `404.html` | Not-found page. GitHub Pages serves it automatically. |
 | `site.css` | The whole design system. Every page links it. |
@@ -18,16 +19,16 @@ Live at https://valm.pro
 | `allan-valm.jpg` | Larger portrait referenced by the structured data. |
 | `allan-valm-og.jpg` | Social share card, 1200 x 630. |
 | `robots.txt` | Allows Google and the AI crawlers. Points to the sitemap. |
-| `sitemap.xml` | Two URLs. Update `lastmod` when a page changes. |
+| `sitemap.xml` | Three URLs. Update `lastmod` when a page changes. |
 | `CNAME` | Custom domain. Must contain exactly `valm.pro`. |
 | `.nojekyll` | Serves the files as they are. |
 
 ## Architecture
 
-Three HTML pages share one stylesheet and one runtime. Nothing is duplicated between pages.
+Four HTML pages share one stylesheet and one runtime. Nothing is duplicated between pages.
 
 - **Styles** live in `site.css` only. The CSS variables at the top hold the design system, so colour and spacing changes happen in one place.
-- **Behaviour** lives in `site.js` only. It loads with `defer` and every block guards on the elements it needs, so the same file is safe on all three pages.
+- **Behaviour** lives in `site.js` only. It loads with `defer` and every block guards on the elements it needs, so the same file is safe on every page.
 - **Asset paths are root-relative** (`/site.css`, `/site.js`, `/fonts/...`). GitHub Pages serves `404.html` at whatever URL was requested, so relative paths would break at depth.
 - **Three small scripts stay inline in the head**, in this order: the `js` class, the Consent Mode defaults, then the Google tags. Consent must be set before any Google script loads.
 
@@ -84,7 +85,7 @@ There is no GTM `noscript` iframe. With JavaScript off the Consent Mode defaults
 
 | Event | Parameters | Meaning |
 |---|---|---|
-| `section_view` | `section` | How far people read. Once per section: `patterns`, `what_you_get`, `honest_part`, `how_it_starts`, `track_record`, `first_session`, `contact` |
+| `section_view` | `section` | How far people read. Once per section: `patterns`, `what_you_get`, `honest_part`, `how_it_starts`, `readiness_teaser`, `track_record`, `first_session`, `contact`, `readiness_contact` |
 | `cta_click` | `location` (`nav`, `hero`) | Someone moved toward the contact section |
 | `generate_lead` | `method` (`email`, `phone`, `linkedin`), `location` (`contact`, `footer`) | Which route they chose |
 | `consent_choice` | `choice` (`granted`, `denied`) | Acceptance rate |

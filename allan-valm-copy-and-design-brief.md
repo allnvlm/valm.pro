@@ -1,6 +1,6 @@
 # valm.pro · Copy and design brief
 
-Allan Valm, AI Augmentation Partner. Three pages at `https://valm.pro`: the home page, a privacy notice and a 404.
+Allan Valm, AI Augmentation Partner. Four pages at `https://valm.pro`: the home page, the production readiness service page, a privacy notice and a 404.
 
 This document is the source of truth for the words and the visual system. Copy is final. Reproduce it exactly.
 
@@ -29,12 +29,13 @@ A retained advisory seat for business-unit owners in regulated industries, espec
 5. What you get, two steps in cards
 6. The honest part, dark panel
 7. How it starts, mechanics and price
-8. Scope
-9. Who I am, portrait
-10. Track record, five entries
-11. The first session, seven questions
-12. Contact, green panel
-13. Footer, dark
+8. Production readiness, links to the service page
+9. Scope
+10. Who I am, portrait
+11. Track record, five entries
+12. The first session, seven questions
+13. Contact, green panel
+14. Footer, dark
 
 ---
 
@@ -110,6 +111,13 @@ That is the point of the seat.
 The first session is where we both decide whether a seat makes sense. You bring one real decision you are facing now. You leave with a clear view of where you are and what to do next, whether or not we go further. The first session carries no fee. What it asks of you is a real decision with real impact.
 
 If it earns a standing seat, we continue month to month. One working session a week and quick calls between. A fixed monthly fee, from 5000 EUR plus VAT, for as long as it is useful for you.
+
+### Fixed price
+**Header:** Someone already built it.
+
+If a working prototype came out of ChatGPT or Claude and now cannot go further, that is a different problem with a fixed price on it. One week, the specialists it needs, and a list of what is missing with what each fix would cost.
+
+Link: Production readiness for AI-built solutions, to `/production-readiness.html`.
 
 ### Scope
 **Header:** What I do not do.
@@ -194,6 +202,8 @@ Buttons: Accept · Only necessary
 ---
 
 ## 4. Other pages
+
+**Production readiness for AI-built solutions** at `/production-readiness.html`. Opening line: one week to find out what AI missed, and what it would cost to close. A fixed-price service page for business-unit owners who built a working prototype with a generative AI tool and cannot take it further. One week, seven specialist lenses, one tiered list with a price range against each item and the prerequisites marked. The name describes the work rather than branding it, and it avoids the word validation, which in financial services implies a regulated function this service does not perform. 15,000 EUR plus VAT. Stop is one of two possible answers, and the page says so before the price. Addressed to the person who built it, never to IT, and IT is described fairly because the reader has to work with them tomorrow.
 
 **Privacy notice** at `/privacy.html`. Eight sections: who is responsible, analytics only with consent, hosting, fonts, contact, what is not here, your rights, changes. Each processing activity states its legal basis in a green-ruled line.
 

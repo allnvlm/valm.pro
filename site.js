@@ -47,6 +47,8 @@
       's-start':     'how_it_starts',
       's-record':    'track_record',
       's-questions': 'first_session',
+      's-built':     'readiness_teaser',
+      's-gl-contact': 'readiness_contact',
       's-close':     'contact'
     };
     if ('IntersectionObserver' in window){
