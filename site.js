@@ -48,7 +48,13 @@
       's-record':    'track_record',
       's-questions': 'first_session',
       's-built':     'readiness_teaser',
-      's-gl-contact': 'readiness_contact',
+      's-pr-stuck':  'readiness_situation',
+      's-pr-worth':  'readiness_worth',
+      's-pr-week':   'readiness_week',
+      's-pr-gives':  'readiness_list',
+      's-pr-after':  'readiness_after',
+      's-pr-cost':   'readiness_cost',
+      's-pr-contact':'readiness_contact',
       's-close':     'contact'
     };
     if ('IntersectionObserver' in window){

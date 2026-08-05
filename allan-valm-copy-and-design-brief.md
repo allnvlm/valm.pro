@@ -54,7 +54,7 @@ A retained advisory seat for business-unit owners in regulated industries, espec
 - **Button:** Contact me
 
 ### The situation
-**Header:** You have AI that works in a demo.
+**Header:** You have AI that seems to work.
 
 The question is whether it survives contact with real operations, with an auditor, with a bad day. In a regulated business, that gap is where money and reputation are lost.
 
@@ -62,9 +62,9 @@ The market is loud with AI enthusiasm. What helps is someone who has stood at th
 
 ### Patterns
 **Header:** What I keep seeing.
-**Intro:** The same few failures, across different firms and different use cases. None of them show up in the demo.
+**Intro:** The same few failures, across different firms and different use cases. None of them show up until it is running for real.
 
-**The demo is the cheap part.**
+**Getting it working once is the cheap part.**
 The build gets quoted. Running it, monitoring it and answering for it does not. A feature that costs little to prototype can be expensive to operate safely in a business-critical system. Price a year of running it before you commit.
 
 **Nobody owns the running cost.**
@@ -203,7 +203,13 @@ Buttons: Accept · Only necessary
 
 ## 4. Other pages
 
-**Production readiness for AI-built solutions** at `/production-readiness.html`. Opening line: one week to find out what AI missed, and what it would cost to close. A fixed-price service page for business-unit owners who built a working prototype with a generative AI tool and cannot take it further. One week, seven specialist lenses, one tiered list with a price range against each item and the prerequisites marked. The name describes the work rather than branding it, and it avoids the word validation, which in financial services implies a regulated function this service does not perform. 15,000 EUR plus VAT. Stop is one of two possible answers, and the page says so before the price. Addressed to the person who built it, never to IT, and IT is described fairly because the reader has to work with them tomorrow.
+**Production readiness for AI-built solutions** at `/production-readiness.html`. A fixed-price service page for business-unit owners who built a working prototype with a generative AI tool and cannot take it further.
+
+Built with the home page's own structure rather than the prose layout: a hero with eyebrow, headline, subhead, qualifier and button, then six kickered sections, a charcoal panel for the price and the stop warning, and a green contact panel. It is a service page and must not read as an article.
+
+Section order and headers: The situation, "Now it is stuck." · What you have, "It is worth more than it looks." · The week, "What happens in the week." with the seven lenses as a bulleted list · What you get, "What the list gives you." · After the week, "You choose what to fix." · What it costs, "A fixed price for the week." on charcoal · Contact, "Send me what you built." on green, with the line: A short description is enough to start a conversation.
+
+15,000 EUR plus VAT. Stop is one of two possible answers, and the charcoal panel says so alongside the price. Addressed to the person who built it, never to IT, and IT is described fairly because the reader has to work with them tomorrow. The name describes the work rather than branding it, and it avoids the word validation, which in financial services implies a regulated function this service does not perform.
 
 **Privacy notice** at `/privacy.html`. Eight sections: who is responsible, analytics only with consent, hosting, fonts, contact, what is not here, your rights, changes. Each processing activity states its legal basis in a green-ruled line.
 
@@ -272,7 +278,7 @@ Near-white throughout, with two exceptions: the honest part is charcoal, the con
 - **Portrait.** Photograph, max 420px, 3:2, `object-position: 50% 30%`, radius `22px`.
 - **Consent banner.** White card, bottom centre, two pill buttons.
 
-The four list treatments must stay visually distinct: patterns use green left rules, questions use numerals, track record uses hairline dividers, contact routes use charcoal left rules.
+The five list treatments must stay visually distinct: patterns use green left rules, questions use numerals, track record uses hairline dividers, contact routes use charcoal left rules.
 
 ### Motion
 `cubic-bezier(.16,1,.3,1)`. Nav slides down on load. Hero elements rise in sequence, 0.15s to 0.58s. The green highlight wipes at 1.05s over 0.55s. Sections reveal on scroll with a per-child stagger. Cards and buttons lift on hover.
@@ -329,10 +335,14 @@ Cold ranking is a weak channel for this offering. Discoverability comes from a s
 ### Register
 State a fact and let the reader draw the conclusion. Never tell the reader what to think of Allan. Avoid vague quantities about yourself; if a number is used it must be the true one.
 
+### Scope split between the two pages
+
+The home page opens broadly, with AI that seems to work. The production readiness page owns the narrower situation, an AI-built solution someone made with a generative AI tool. Do not move "AI-built solution" onto the home page header, because the seat also serves people who are choosing a vendor, scaling a properly built model or governing AI across a business unit, and none of them built anything.
+
 ### Plain English
 Readers use English as a second language across the Nordics, the Baltics and DACH. Formal business vocabulary travels: compliance, validation, governance, infrastructure, augmentation. Native idiom does not.
 
-Do not use: beats, the bench, your bearings, earns its keep, cannot bank, live decision, counsel, warranted, caveat, cache, quality bar, own ground, bolting onto, keeping you up, capital and credibility. Avoid defensive openers such as "for the record".
+Do not use: demo, beats, the bench, your bearings, earns its keep, cannot bank, live decision, counsel, warranted, caveat, cache, quality bar, own ground, bolting onto, keeping you up, capital and credibility. Avoid defensive openers such as "for the record".
 
 These stay, because context teaches them: the seat, crossroads, my read, bottleneck, lock-in, sunk cost, guardrails, go-live, drift, attack surface, prompt injection, auditor.
 
