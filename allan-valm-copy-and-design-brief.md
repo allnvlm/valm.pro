@@ -70,8 +70,8 @@ The build gets quoted. Running it, monitoring it and answering for it does not. 
 **Nobody owns the running cost.**
 AI costs drift when no one is accountable for them. The largest model gets used for work a smaller one would handle. Context gets re-sent instead of reused. Experiments stay running in live systems. Put a number on cost per case before you scale, and read the bill every month.
 
-**Lock-in hides in the wiring.**
-Teams worry about picking the wrong model. The cost of leaving is rarely the model. It is the data, the prompts and the workflow wired so tightly to one vendor that moving means starting over. Keep a thin layer between your systems and any single provider, favour portable data and put exit terms in the contract.
+**Lock-in hides in the integration.**
+Teams worry about picking the wrong model. The cost of leaving is rarely the model. It is the data, the prompts and the workflow integrated so tightly with one vendor that moving means starting over. Keep a thin layer between your systems and any single provider, favour portable data and put exit terms in the contract.
 
 **The evidence gets built last.**
 Proof that the model works and proof that it complies are treated as two projects, and the second one starts after go-live. Build them as one deliverable. Under the EU AI Act that evidence is what an auditor asks to see. Assembling it afterwards turns a review into a project of its own.
@@ -196,17 +196,74 @@ Buttons: Accept · Only necessary
 
 ## 4. Other pages
 
-**Production readiness for AI-built solutions** at `/production-readiness.html`. A fixed-price service page for business-unit owners who built a working prototype with a generative AI tool and cannot take it further.
+The home page copy is in section 3. The pages below carry their own copy in full.
 
-Built with the home page's own structure rather than the prose layout: a hero with eyebrow, headline, subhead, qualifier and button, then six kickered sections, a charcoal panel for the price and the stop warning, and a green contact panel. It is a service page and must not read as an article.
+### Production readiness for AI-built solutions
 
-Section order and headers: The situation, "Now it is stuck." · What you have, "It is worth more than it looks." · The week, "What happens in the week." with the seven lenses as a bulleted list · What you get, "What the list gives you." · After the week, "You choose what to fix." · What it costs, "A fixed price for the week." on charcoal · Contact, "Send me what you built." on green, with the line: A short description is enough to start a conversation.
+At `/production-readiness.html`. A fixed-price service page for business-unit owners who built a working prototype with a generative AI tool and cannot take it further. Built with the home page's structure, not the prose layout: hero, then six kickered sections, a charcoal panel for the price and the stop warning, and a green contact panel. It is a service page and must not read as an article.
 
-15,000 EUR plus VAT. Stop is one of two possible answers, and the charcoal panel says so alongside the price. Addressed to the person who built it, never to IT, and IT is described fairly because the reader has to work with them tomorrow. The name describes the work rather than branding it, and it avoids the word validation, which in financial services implies a regulated function this service does not perform.
+**Nav**
+- Link: The retained seat, to `/`
+- Button: Contact me, scrolls to the contact section
 
-**Privacy notice** at `/privacy.html`. Eight sections: who is responsible, analytics only with consent, hosting, fonts, contact, what is not here, your rights, changes. Each processing activity states its legal basis in a green-ruled line.
+**Hero**
+- Eyebrow: Allan Valm · Production readiness
+- Headline: Production readiness for AI-built solutions.
+- Subhead: One week to find out what AI missed, and what it would cost to close.
+- Qualifier: For business-unit owners in regulated industries, especially in financial services.
+- Button: Contact me
 
-**404** at `/404.html`. Header "That page is not here." with a link home. Assumes the visitor has never seen the home page, so it uses no site-specific vocabulary.
+**The situation · Now it is stuck.**
+
+You built something with ChatGPT or Claude and it works. People have seen it. That is further than most ideas get.
+
+Either it keeps running quietly on real data that nobody has checked, or it sits with IT, who cannot take responsibility for something they did not build and cannot fully read.
+
+**What you have · It is worth more than it looks.**
+
+Somebody wanted this enough to build it, and it works well enough to show. Most business cases never prove that much.
+
+What it does not have is everyone else's view. Your customers were never asked. The systems it needs to live in were never consulted. Nobody worked out what it costs to run. And in a regulated business, three more things were never looked at at all.
+
+**The week · What happens in the week.**
+
+I go through what was built. Then the specialists it needs come in, one at a time, each looking through their own lens.
+
+The seven lenses, as a bulleted list: Business needs · Customer expectations · System constraints · Solution delivery · AI model output validation · Cybersecurity · The evidence your team and an auditor will ask for
+
+At the end you have one list. Every item says what is missing, what it means for you if it stays that way, what it would cost to fix, and whether it can be fixed on its own.
+
+That last point decides the order of everything. Some things cannot be added later. If nothing was recorded while the system was running, the record cannot be created afterwards. Knowing which fixes have to come first is what stops you paying for three of them and then learning the fourth means starting again.
+
+**What you get · What the list gives you.**
+
+It gives you a decision. The front page says which items have to be fixed before this can run in your business, what those cost together, and what the thing is worth to you over a year.
+
+It also gives you and IT the same facts. Today the argument is that it works against it is not safe, and neither side can show anything. The list ends that.
+
+**After the week · You choose what to fix.**
+
+Each fix has its own price from the list and its own finish. Once it is running, you see each month what it costs against what it returns, and you decide again whether to continue.
+
+**What it costs · A fixed price for the week.** On the charcoal panel.
+
+15,000 EUR plus VAT. Fixes are quoted from the list, so you never commit to more than you have chosen.
+
+There are two honest answers at the end of the week, and stop is one of them. If the necessary fixes cost more than the thing is worth, that is what the list will say. Finding that out in a week is cheaper than finding it out after the build.
+
+**Contact · Send me what you built.** On the green panel, with the same three routes as the home page.
+
+A short description is enough to start a conversation.
+
+**Rules for this page.** Addressed to the person who built it, never to IT, and IT is described fairly because the reader has to work with them tomorrow. The name describes the work rather than branding it, and it avoids the word validation, which in financial services implies a regulated function this service does not perform.
+
+### Privacy notice
+
+At `/privacy.html`. Eight sections: who is responsible, analytics only with consent, hosting, fonts, contact, what is not here, your rights, changes. Each processing activity states its legal basis in a green-ruled line.
+
+### 404
+
+At `/404.html`. Header "That page is not here." with a link home. Assumes the visitor has never seen the home page, so it uses no site-specific vocabulary.
 
 Both pages describe the site itself and go stale when the site changes. Check them whenever a page is added or a tool changes.
 
