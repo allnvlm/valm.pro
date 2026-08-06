@@ -51,6 +51,7 @@ A retained advisory seat for business-unit owners in regulated industries, espec
 - **Subhead:** A weekly working session on the AI decisions that matter, plus me on call, without the cost of a full-time hire.
 - **Qualifier:** For business-unit owners in regulated industries, especially in financial services.
 - **Button:** Contact me
+- **Micro line under the button:** If you have one solution that has to reach production, start here. Links to the service page. This is the route for a visitor who has one thing rather than a stream of decisions, and it must stay in the hero, because the section that describes their situation sits above six sections selling the seat.
 
 ### The situation
 **Header:** You have an AI-built solution that seems to work.
@@ -73,7 +74,7 @@ AI costs drift when no one is accountable for them. The largest model gets used 
 Teams worry about picking the wrong model. The cost of leaving is rarely the model. It is the data, the prompts and the workflow wired so tightly to one vendor that moving means starting over. Keep a thin layer between your systems and any single provider, favour portable data and put exit terms in the contract.
 
 **The evidence gets built last.**
-Proof that the model works and proof that it complies are treated as two projects, and the second one starts after go-live. Build them as one deliverable. Under the EU AI Act and DORA that evidence is what an auditor asks to see. Assembling it afterwards turns a review into a project of its own.
+Proof that the model works and proof that it complies are treated as two projects, and the second one starts after go-live. Build them as one deliverable. Under the EU AI Act that evidence is what an auditor asks to see. Assembling it afterwards turns a review into a project of its own.
 
 **Existing controls do not cover the new attack surface.**
 Prompt injection is the gap that surprises people: hidden instructions inside a document, a web page or a user message that push the model to act against your intent. Treat every input the model reads as untrusted, limit what it can do on its own and keep a person in the loop for anything that moves money or data. Convincing text, voices and images are cheap to produce now, so identity checks that once relied on appearances need rethinking.
@@ -114,7 +115,7 @@ If it earns a standing seat, we continue month to month. One working session a w
 ### Fixed price
 **Header:** Someone already built it.
 
-The seat is for the AI decisions that keep coming. If instead you have one solution that has to reach production, that is a different problem with a fixed price on it. One week, the specialists it needs, and a list of what is missing with what each fix would cost.
+The seat is for the AI decisions that keep coming. If instead you have one solution that has to reach production, that is a different problem with a fixed price on it. One week, the specialists it needs, and a list of what is missing with what each fix would cost. A fixed price, from 15,000 EUR plus VAT.
 
 Link: Production readiness for AI-built solutions, to `/production-readiness.html`.
 
@@ -161,7 +162,7 @@ Entries open with the verb and carry no "I". Current roles take the gerund, past
 3. **Who answers for it?**
    Approval and accountability get confused. Several people can approve an AI system. One person has to answer for it, and should know that before go-live.
 4. **What would you have to show an auditor, and could you show it today?**
-   Under the EU AI Act and DORA this question arrives late and costs the most when it does.
+   Under the EU AI Act this question arrives late and costs the most when it does.
 5. **What does a year of running this cost?**
    The build gets quoted. The cost of operating, monitoring and fixing it rarely does.
 6. **Who owns it once it is live?**
@@ -300,7 +301,7 @@ The title carries the sector because strangers and machines read it. The share-c
 ### Structured data
 One JSON-LD block on the home page, two nodes.
 
-**Person.** Name, job title, image, email, telephone, `worksFor` Helmes, `alumniOf` Tallinn University of Technology, `sameAs` the LinkedIn profile. `knowsAbout` carries AI governance, AI validation, AI model validation, AI production readiness, EU AI Act, DORA, regulated financial services, AI risk management, cybersecurity, AI security, AI in insurance, AI in banking, AI-augmented workflow design and fractional AI advisory. Keep it in step with the disciplines named in card 2.
+**Person.** Name, job title, image, email, telephone, `worksFor` Helmes, `alumniOf` Tallinn University of Technology, `sameAs` the LinkedIn profile. `knowsAbout` carries AI governance, AI validation, AI model validation, AI production readiness, EU AI Act, DORA (machine-readable only, it appears nowhere a human reads), regulated financial services, AI risk management, cybersecurity, AI security, AI in insurance, AI in banking, AI-augmented workflow design and fractional AI advisory. Keep it in step with the disciplines named in card 2.
 
 **ProfessionalService.** The seat, its audience, an `offers` node with the price and a VAT-excluded flag, and `areaServed` across Estonia, Latvia, Lithuania, Finland, Sweden, Norway, Denmark, Germany, Switzerland and Austria. `alternateName` includes "Fractional AI advisor", which appears nowhere a human reads.
 

@@ -51,6 +51,10 @@
   }
   .nav-brand{ display:flex; align-items:center; gap:.55rem; font-weight:700; font-size:1rem; color:var(--ink); letter-spacing:-.01em; text-decoration:none; }
   .nav-dot{ width:9px; height:9px; border-radius:var(--r-pill); background:var(--green); }
+  .nav-right{ display:flex; align-items:center; gap:1.1rem; }
+  .nav-link{ font-weight:600; font-size:.92rem; color:var(--ink-soft); text-decoration:none; white-space:nowrap; transition:color .18s ease; }
+  .nav-link:hover{ color:var(--ink); }
+  .nav-link:focus-visible{ outline:3px solid var(--charcoal); outline-offset:3px; border-radius:3px; }
   .nav-cta{
     font-weight:600; font-size:.92rem; color:var(--charcoal); background:var(--green);
     padding:.62rem 1.1rem; border-radius:var(--r-pill); text-decoration:none;
@@ -104,6 +108,9 @@
   }
   .subhead{ font-size:clamp(1.16rem,1.05rem + 0.45vw,1.35rem); line-height:1.48; color:var(--ink-soft); margin:0 0 1rem; max-width:40ch; }
   .qualifier{ font-size:.96rem; line-height:1.5; color:var(--ink-soft); margin:0 0 2.3rem; max-width:44ch; }
+  .micro{ font-size:.92rem; line-height:1.55; color:var(--ink-soft); margin:0; max-width:40ch; }
+  .micro a{ color:var(--green-deep); text-decoration:underline; text-underline-offset:.18em; }
+  .micro a:hover{ text-decoration-thickness:2px; }
   .hero-cta{ display:flex; flex-direction:column; align-items:flex-start; gap:1rem; }
 
   /* ---- Two beats as cards ---- */
@@ -234,7 +241,7 @@
     .js .hero .anim{ opacity:0; transform:translateY(12px); animation:rise .8s var(--ease) forwards; }
     .js .hero .d1{animation-delay:.15s;} .js .hero .d2{animation-delay:.26s;}
     .js .hero .d3{animation-delay:.40s;} .js .hero .d4{animation-delay:.49s;}
-    .js .hero .d5{animation-delay:.58s;}
+    .js .hero .d5{animation-delay:.58s;} .js .hero .d6{animation-delay:.67s;}
     @keyframes rise{ to{ opacity:1; transform:none; } }
 
     /* highlighter wipe on "faster" */
@@ -263,6 +270,7 @@
   @media (max-width:480px){
     .btn{ display:block; text-align:center; }
     .nav-cta{ font-size:.86rem; padding:.55rem .95rem; }
+    .nav-link{ display:none; }
   }
 
   /* ---- Prose pages: privacy notice, 404 ---- */
