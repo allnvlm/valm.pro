@@ -30,12 +30,11 @@ A retained advisory seat for business-unit owners in regulated industries, espec
 6. The honest part, dark panel
 7. How it starts, mechanics and price
 8. Production readiness, links to the service page
-9. Scope
-10. Who I am, portrait
-11. Track record, five entries
-12. The first session, seven questions
-13. Contact, green panel
-14. Footer, dark
+9. Who I am, portrait
+10. Track record, five entries
+11. The first session, seven questions
+12. Contact, green panel
+13. Footer, dark
 
 ---
 
@@ -54,9 +53,9 @@ A retained advisory seat for business-unit owners in regulated industries, espec
 - **Button:** Contact me
 
 ### The situation
-**Header:** You have AI that seems to work.
+**Header:** You have an AI-built solution that seems to work.
 
-The question is whether it survives contact with real operations, with an auditor, with a bad day. In a regulated business, that gap is where money and reputation are lost.
+It runs on someone's machine and does what they asked for. What nobody has checked is what the code actually does, and whether it survives contact with real operations, with an auditor, with a bad day. In a regulated business, that gap is where money and reputation are lost.
 
 The market is loud with AI enthusiasm. What helps is someone who has stood at this crossroads before and can tell you which way it usually goes.
 
@@ -88,7 +87,7 @@ That gives you a faster broken process. Map how the work flows today, find the s
 ### What you get
 **Header:** Two steps, in order.
 
-**Card 1 · First · my read of the situation**
+**Card 1 · First · my view of the situation**
 
 You bring a real decision. I tell you where you are, what is doable for a firm at your stage and the crossroads you are actually standing at. What I have seen go right and wrong, applied to your situation in an hour.
 
@@ -101,7 +100,7 @@ The card describes scope, never price. It must not be edited into anything imply
 ### The honest part
 **Header:** Sometimes the answer is no.
 
-Sometimes the honest read is to wait, or to walk away. I can say that and keep the seat. My fee is the same whether you build or hold, so nothing is pulling me toward a yes.
+Sometimes the honest advice is to wait, or to walk away. I can say that and keep the seat. My fee is the same whether you build or hold, so nothing is pulling me toward a yes.
 
 That is the point of the seat.
 
@@ -115,21 +114,14 @@ If it earns a standing seat, we continue month to month. One working session a w
 ### Fixed price
 **Header:** Someone already built it.
 
-If a working prototype came out of ChatGPT or Claude and now cannot go further, that is a different problem with a fixed price on it. One week, the specialists it needs, and a list of what is missing with what each fix would cost.
+The seat is for the AI decisions that keep coming. If instead you have one solution that has to reach production, that is a different problem with a fixed price on it. One week, the specialists it needs, and a list of what is missing with what each fix would cost.
 
 Link: Production readiness for AI-built solutions, to `/production-readiness.html`.
-
-### Scope
-**Header:** What I do not do.
-
-The seat is judgment you can act on. When you decide to build or scale, [Helmes](https://www.helmes.com) takes it from there as the firm.
-
-The read is advice to inform your decision. I do not sign anything off. Your compliance officer and your lawyers do that.
 
 ### Who I am
 **Header:** Who I am. Portrait sits above it.
 
-I am Allan Valm, a Business Area Leader at [Helmes](https://www.helmes.com), a software group of around 1,500 people across the Baltics and beyond. Watching business-critical software succeed and fail taught me to read the difference early.
+I am Allan Valm, a Business Area Leader at [Helmes](https://www.helmes.com), a software group of around 1,500 people across the Baltics and beyond. Watching business-critical software succeed and fail taught me to see the difference early.
 
 The seat is me. When you decide to build, Helmes delivers as the firm. You get one person's judgment with an institution behind it.
 
@@ -335,16 +327,18 @@ Cold ranking is a weak channel for this offering. Discoverability comes from a s
 ### Register
 State a fact and let the reader draw the conclusion. Never tell the reader what to think of Allan. Avoid vague quantities about yourself; if a number is used it must be the true one.
 
-### Scope split between the two pages
+### Scope
 
-The home page opens broadly, with AI that seems to work. The production readiness page owns the narrower situation, an AI-built solution someone made with a generative AI tool. Do not move "AI-built solution" onto the home page header, because the seat also serves people who are choosing a vendor, scaling a properly built model or governing AI across a business unit, and none of them built anything.
+Both services address one situation: a solution built with a generative AI tool by a business person with beginner-level technical skills, which works on their machine and now has to reach production. The site does not address people choosing an AI vendor or scaling a model that was properly built in the first place.
+
+The two offers differ by scope, and both pages say so. The fixed-price week is for one specific AI-built solution. The retained seat is ongoing support for AI decisions that keep coming. The home page teaser states it and the service page links back to the seat, so a reader with a single prototype is not sold a monthly retainer.
 
 ### Plain English
 Readers use English as a second language across the Nordics, the Baltics and DACH. Formal business vocabulary travels: compliance, validation, governance, infrastructure, augmentation. Native idiom does not.
 
-Do not use: demo, beats, the bench, your bearings, earns its keep, cannot bank, live decision, counsel, warranted, caveat, cache, quality bar, own ground, bolting onto, keeping you up, capital and credibility. Avoid defensive openers such as "for the record".
+Do not use: demo, the read as a noun, beats, the bench, your bearings, earns its keep, cannot bank, live decision, counsel, warranted, caveat, cache, quality bar, own ground, bolting onto, keeping you up, capital and credibility. Avoid defensive openers such as "for the record".
 
-These stay, because context teaches them: the seat, crossroads, my read, bottleneck, lock-in, sunk cost, guardrails, go-live, drift, attack surface, prompt injection, auditor.
+These stay, because context teaches them: the seat, crossroads, bottleneck, lock-in, sunk cost, guardrails, go-live, drift, attack surface, prompt injection, auditor.
 
 ---
 
