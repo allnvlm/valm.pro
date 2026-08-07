@@ -133,6 +133,7 @@
   .close .head{ max-width:18ch; }
   .close p{ max-width:52ch; }
   .close .btn{ margin-top:1.7rem; }
+  .close .note{ margin:1.9rem 0 0; font-size:.94rem; line-height:1.55; max-width:52ch; }
 
   /* ---- Portrait ---- */
   .portrait{ display:block; width:100%; max-width:420px; aspect-ratio:3/2; object-fit:cover; object-position:50% 30%; border-radius:var(--r-card); border:1px solid var(--hair); box-shadow:0 6px 30px rgba(47,49,63,.08); margin-bottom:2rem; }

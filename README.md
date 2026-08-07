@@ -85,7 +85,7 @@ There is no GTM `noscript` iframe. With JavaScript off the Consent Mode defaults
 
 | Event | Parameters | Meaning |
 |---|---|---|
-| `section_view` | `section` | How far people read. Once per section: `patterns`, `what_you_get`, `honest_part`, `how_it_starts`, `readiness_teaser`, `track_record`, `first_session`, `contact`, `readiness_contact` |
+| `section_view` | `section` | How far people read. Once per section: `patterns`, `what_you_get`, `honest_part`, `how_it_starts`, `two_ways_in`, `track_record`, `first_session`, `contact`, `readiness_contact` |
 | `cta_click` | `location` (`nav`, `hero`) | Someone moved toward the contact section |
 | `generate_lead` | `method` (`email`, `phone`, `linkedin`), `location` (`contact`, `footer`) | Which route they chose |
 | `consent_choice` | `choice` (`granted`, `denied`) | Acceptance rate |

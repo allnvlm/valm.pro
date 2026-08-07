@@ -10,7 +10,7 @@ Last synced: 27 July 2026. Home page: about 1,456 words.
 
 ## 1. The offering
 
-A retained advisory seat for business-unit owners in regulated industries, especially financial services. One working session a week, quick calls between, and specialist depth brought in from Helmes when a decision needs it.
+A retainer for business-unit owners in regulated industries, especially financial services. One working session a week, quick calls between, and specialist depth brought in from Helmes when a decision needs it.
 
 **Positioning promise, verbatim brand copy:** Move faster without losing control.
 
@@ -25,14 +25,14 @@ A retained advisory seat for business-unit owners in regulated industries, espec
 1. Sticky nav
 2. Hero
 3. The situation
-4. Patterns, seven observations
-5. What you get, two steps in cards
-6. The honest part, dark panel
-7. How it starts, mechanics and price
-8. Production readiness, links to the service page
+4. Two ways in, the fork between the two offers
+5. Patterns, seven observations
+6. What you get, two steps in cards
+7. The honest part, dark panel
+8. How it starts, mechanics and price
 9. Who I am, portrait
 10. Track record, five entries
-11. The first session, seven questions
+11. The first session, eight questions
 12. Contact, green panel
 13. Footer, dark
 
@@ -51,12 +51,12 @@ A retained advisory seat for business-unit owners in regulated industries, espec
 - **Subhead:** A weekly working session on the AI decisions that matter, plus me on call, without the cost of a full-time hire.
 - **Qualifier:** For business-unit owners in regulated industries, especially in financial services.
 - **Button:** Contact me
-- **Micro line under the button:** If you have one solution that has to reach production, start here. Links to the service page. This is the route for a visitor who has one thing rather than a stream of decisions, and it must stay in the hero, because the section that describes their situation sits above six sections selling the seat.
+- **Micro line under the button:** If you have one solution that has to reach production, start here. Links to the service page. This is the route for a visitor who has one thing rather than a stream of decisions, and it must stay in the hero, because the section that describes their situation sits above six sections selling the retainer.
 
 ### The situation
 **Header:** You have an AI-built solution that seems to work.
 
-It runs on someone's machine and does what they asked for. What nobody has checked is what the code actually does, and whether it survives contact with real operations, with an auditor, with a bad day. In a regulated business, that gap is where money and reputation are lost.
+It runs on someone's machine and does what they asked for. The open question is what the code actually does, and whether it survives contact with real operations, with an auditor, with a bad day. In a regulated business, that gap is where money and reputation are lost.
 
 The market is loud with AI enthusiasm. What helps is someone who has stood at this crossroads before and can tell you which way it usually goes.
 
@@ -94,37 +94,42 @@ You bring a real decision. I tell you where you are, what is doable for a firm a
 
 **Card 2 · Then · specialist depth**
 
-Knowing who to bring in from the multidisciplinary team, and when, is most of the value to make a decision with confidence. On-demand expertise to get a complete understanding of business needs, customer expectations, system constraints and solution delivery. And not to forget AI model output validation, cybersecurity and the evidence your team and an auditor will ask for.
+Knowing who to bring in from the multidisciplinary team, and when, is most of the value to make a decision with confidence. On-demand expertise to get a complete understanding of business needs, customer expectations, system constraints and solution delivery. And not to forget AI model output validation, cybersecurity and the evidence your team and an auditor will ask for. When a decision turns on one of those, that specialist joins for the decision.
 
-The card describes scope, never price. It must not be edited into anything implying a specialist's time is free.
+Both cards must describe an event, not a capability. Card one has a trigger, an action and an outcome. Card two needs the same, which is what the closing sentence supplies. The card describes scope, never price. It must not be edited into anything implying a specialist's time is free.
 
 ### The honest part
 **Header:** Sometimes the answer is no.
 
-Sometimes the honest advice is to wait, or to walk away. I can say that and keep the seat. My fee is the same whether you build or hold, so nothing is pulling me toward a yes.
+Sometimes the honest advice is to wait, or to walk away. I can say that and keep the retainer. My fee is the same whether you build or hold, so nothing is pulling me toward a yes.
 
-That is the point of the seat.
+That is the point of the retainer.
 
 ### How it starts
 **Header:** How it starts.
 
-The first session is where we both decide whether a seat makes sense. You bring one real decision you are facing now. You leave with a clear view of where you are and what to do next, whether or not we go further. The first session carries no fee. What it asks of you is a real decision with real impact.
+The first session is where we both decide whether a retainer makes sense. You bring one real decision you are facing now. You leave with a clear view of where you are and what to do next, whether or not we go further. The first session carries no fee. What it asks of you is a real decision with real impact.
 
-If it earns a standing seat, we continue month to month. One working session a week and quick calls between. A fixed monthly fee, from 5000 EUR plus VAT, for as long as it is useful for you.
+If it earns a retainer, we continue month to month. One working session a week and quick calls between. A fixed monthly fee, from 5000 EUR plus VAT, for as long as it is useful for you.
 
-### Fixed price
-**Header:** Someone already built it.
+### Two ways in
+**Kicker:** TWO WAYS IN
+**Header:** One solution, or a stream of them.
 
-The seat is for the AI decisions that keep coming. If instead you have one solution that has to reach production, that is a different problem with a fixed price on it. One week, the specialists it needs, and a list of what is missing with what each fix would cost. A fixed price, from 15,000 EUR plus VAT.
+If you have one solution that has to reach production, there is a fixed-price week for that. One week, the specialists it needs, and a list of what is missing with what each fix would cost. From 15,000 EUR plus VAT.
 
 Link: Production readiness for AI-built solutions, to `/production-readiness.html`.
+
+If AI-built solutions keep appearing across your teams, the decisions keep coming with them. That is what the retainer is for, and it is what the rest of this page is about.
+
+This section sits directly after The situation and must stay there. Both offers address the same situation, so the reader has to be told which one is theirs before the page spends eight sections on the retainer. The closing sentence signposts what follows, which is unusual for a landing page and deliberate.
 
 ### Who I am
 **Header:** Who I am. Portrait sits above it.
 
 I am Allan Valm, a Business Area Leader at [Helmes](https://www.helmes.com), a software group of around 1,500 people across the Baltics and beyond. Watching business-critical software succeed and fail taught me to see the difference early.
 
-The seat is me. When you decide to build, Helmes delivers as the firm. You get one person's judgment with an institution behind it.
+It is me you work with. When you decide to build, Helmes delivers as the firm. You get one person's judgment with an institution behind it.
 
 Helmes is linked here and in Scope, on first mention only.
 
@@ -157,17 +162,19 @@ Entries open with the verb and carry no "I". Current roles take the gerund, past
 
 1. **What decision are you actually making, and by when?**
    Many AI conversations contain no decision at all. Naming it helps the team focus on what matters.
-2. **What happens when the model is wrong?**
+2. **Who else has to agree, and what will they need to see?**
+   The decision is rarely one person's. Each person who has to agree needs something different, and finding that out late is what causes the delay.
+3. **What happens when the model is wrong?**
    How often, how visibly and what it costs. Every model is wrong sometimes, so plan for the day it is.
-3. **Who answers for it?**
+4. **Who answers for it?**
    Approval and accountability get confused. Several people can approve an AI system. One person has to answer for it, and should know that before go-live.
-4. **What would you have to show an auditor, and could you show it today?**
+5. **What would you have to show an auditor, and could you show it today?**
    Under the EU AI Act this question arrives late and costs the most when it does.
-5. **What does a year of running this cost?**
+6. **What does a year of running this cost?**
    The build gets quoted. The cost of operating, monitoring and fixing it rarely does.
-6. **Who owns it once it is live?**
+7. **Who owns it once it is live?**
    Models drift and data changes. Watching for that is a standing job, and it needs an owner.
-7. **What would make you stop?**
+8. **What would make you stop?**
    Agree the answer before you start. It is the hardest question here and the most useful one.
 
 **Closing line:** If the answers come easily, you are in better shape than most. If two or three of them stall, that is the conversation worth having.
@@ -182,6 +189,10 @@ Three routes, equal weight, label then value. No explanation beneath any of them
 - **Email** · allan@valm.pro
 - **Phone** · +372 5198 9999
 - **LinkedIn** · linkedin.com/in/allanvalm
+
+**Note under the routes:** The first session carries no fee. I read these myself and reply within one working day.
+
+Both facts are reliability commitments and must stay. The no-fee status is otherwise only stated in How it starts, which a reader who scrolls straight to contact never sees.
 
 ### Footer
 Allan Valm · AI Augmentation Partner
@@ -203,7 +214,7 @@ The home page copy is in section 3. The pages below carry their own copy in full
 At `/production-readiness.html`. A fixed-price service page for business-unit owners who built a working prototype with a generative AI tool and cannot take it further. Built with the home page's structure, not the prose layout: hero, then six kickered sections, a charcoal panel for the price and the stop warning, and a green contact panel. It is a service page and must not read as an article.
 
 **Nav**
-- Link: The retained seat, to `/`
+- Link: The retainer, to `/`
 - Button: Contact me, scrolls to the contact section
 
 **Hero**
@@ -217,13 +228,13 @@ At `/production-readiness.html`. A fixed-price service page for business-unit ow
 
 You built something with ChatGPT or Claude and it works. People have seen it. That is further than most ideas get.
 
-Either it keeps running quietly on real data that nobody has checked, or it sits with IT, who cannot take responsibility for something they did not build and cannot fully read.
+Usually one of two things happens. It keeps running quietly on real data, or it goes to IT, who are being asked to take responsibility for something they did not build and cannot fully understand.
 
 **What you have · It is worth more than it looks.**
 
 Somebody wanted this enough to build it, and it works well enough to show. Most business cases never prove that much.
 
-What it does not have is everyone else's view. Your customers were never asked. The systems it needs to live in were never consulted. Nobody worked out what it costs to run. And in a regulated business, three more things were never looked at at all.
+What it may not have is everyone else's view. Have your customers seen it? Will the systems it has to live in allow what it assumes? Does anyone know what a year of running it costs? In a regulated business, three more questions sit behind those.
 
 **The week · What happens in the week.**
 
@@ -253,7 +264,7 @@ There are two honest answers at the end of the week, and stop is one of them. If
 
 **Contact · Send me what you built.** On the green panel, with the same three routes as the home page.
 
-A short description is enough to start a conversation.
+A short description is enough to start a conversation. I read these myself and reply within one working day.
 
 **Rules for this page.** Addressed to the person who built it, never to IT, and IT is described fairly because the reader has to work with them tomorrow. The name describes the work rather than branding it, and it avoids the word validation, which in financial services implies a regulated function this service does not perform.
 
@@ -360,7 +371,7 @@ One JSON-LD block on the home page, two nodes.
 
 **Person.** Name, job title, image, email, telephone, `worksFor` Helmes, `alumniOf` Tallinn University of Technology, `sameAs` the LinkedIn profile. `knowsAbout` carries AI governance, AI validation, AI model validation, AI production readiness, EU AI Act, DORA (machine-readable only, it appears nowhere a human reads), regulated financial services, AI risk management, cybersecurity, AI security, AI in insurance, AI in banking, AI-augmented workflow design and fractional AI advisory. Keep it in step with the disciplines named in card 2.
 
-**ProfessionalService.** The seat, its audience, an `offers` node with the price and a VAT-excluded flag, and `areaServed` across Estonia, Latvia, Lithuania, Finland, Sweden, Norway, Denmark, Germany, Switzerland and Austria. `alternateName` includes "Fractional AI advisor", which appears nowhere a human reads.
+**ProfessionalService.** The retainer, its audience, an `offers` node with the price and a VAT-excluded flag, and `areaServed` across Estonia, Latvia, Lithuania, Finland, Sweden, Norway, Denmark, Germany, Switzerland and Austria. `alternateName` includes "Fractional AI advisor", which appears nowhere a human reads.
 
 ### Discoverability
 Google's guidance is that no special optimisation, markup or `llms.txt` is needed for AI Overviews or AI Mode. The lever is unique, first-hand content, which is what Patterns and Track record exist to be. FAQ rich results were retired on 7 May 2026, so no FAQ markup is used.
@@ -383,20 +394,23 @@ Cold ranking is a weak channel for this offering. Discoverability comes from a s
 - "Move faster without losing control" is verbatim brand copy. Never paraphrase it.
 
 ### Register
+
+Never state as fact what the reader has or has not done. Declare about the world, ask about the reader. "Your customers were never asked" is a guess; "Have your customers seen it?" is a question. This is the difference between consultative and pitching, and it is what keeps the more prepared buyer in the conversation rather than filtering down to the least prepared one.
+
 State a fact and let the reader draw the conclusion. Never tell the reader what to think of Allan. Avoid vague quantities about yourself; if a number is used it must be the true one.
 
 ### Scope
 
 Both services address one situation: a solution built with a generative AI tool by a business person with beginner-level technical skills, which works on their machine and now has to reach production. The site does not address people choosing an AI vendor or scaling a model that was properly built in the first place.
 
-The two offers differ by scope, and both pages say so. The fixed-price week is for one specific AI-built solution. The retained seat is ongoing support for AI decisions that keep coming. The home page teaser states it and the service page links back to the seat, so a reader with a single prototype is not sold a monthly retainer.
+The two offers differ by scope, and both pages say so. The fixed-price week is for one specific AI-built solution. The retainer is ongoing support for AI decisions that keep coming. The home page teaser states it and the service page links back to the retainer, so a reader with a single prototype is not sold a monthly retainer.
 
 ### Plain English
 Readers use English as a second language across the Nordics, the Baltics and DACH. Formal business vocabulary travels: compliance, validation, governance, infrastructure, augmentation. Native idiom does not.
 
-Do not use: demo, the read as a noun, beats, the bench, your bearings, earns its keep, cannot bank, live decision, counsel, warranted, caveat, cache, quality bar, own ground, bolting onto, keeping you up, capital and credibility. Avoid defensive openers such as "for the record".
+Do not use: demo, the seat as a name for the retainer, the read as a noun, beats, the bench, your bearings, earns its keep, cannot bank, live decision, counsel, warranted, caveat, cache, quality bar, own ground, bolting onto, keeping you up, capital and credibility. Avoid defensive openers such as "for the record".
 
-These stay, because context teaches them: the seat, crossroads, bottleneck, lock-in, sunk cost, guardrails, go-live, drift, attack surface, prompt injection, auditor.
+These stay, because context teaches them: crossroads, bottleneck, lock-in, sunk cost, guardrails, go-live, drift, attack surface, prompt injection, auditor.
 
 ---
 
@@ -405,7 +419,7 @@ These stay, because context teaches them: the seat, crossroads, bottleneck, lock
 - **Evidence inside Patterns.** Track record carries named proof. Patterns still asserts seven observations with no instance attached to any of them. One anonymised concrete per two or three would be the next improvement.
 - **Financial-services currency.** The named finance work, Inbank and Playtech, runs 2010 to 2017. Current named work is government. The page says "especially in financial services".
 - **Response promise.** Nothing tells a first-time contact what happens after they write. One line beneath the three routes would cover it: "I read these myself and reply within two working days."
-- **Weekly cadence.** The seat was designed around a monthly session. It now specifies weekly plus on-call, which changes the capacity ceiling and the maths behind the entry price.
+- **Weekly cadence.** The retainer was designed around a monthly session. It now specifies weekly plus on-call, which changes the capacity ceiling and the maths behind the entry price.
 - **GA4 retention.** The privacy notice says at most fourteen months. Confirm the property setting.
 - **Postal address.** The privacy notice gives a city, an email and a phone number. A full postal address is the usual expectation for a data controller.
 - **Design-system coherence.** The one-pager, landing page, control-room demo and self-assessment still run Space Grotesk and teal-indigo. Migrate them or accept the divergence.
