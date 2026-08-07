@@ -47,7 +47,6 @@
       's-start':     'how_it_starts',
       's-record':    'track_record',
       's-questions': 'first_session',
-      's-fork':      'two_ways_in',
       's-pr-stuck':  'readiness_situation',
       's-pr-worth':  'readiness_worth',
       's-pr-week':   'readiness_week',

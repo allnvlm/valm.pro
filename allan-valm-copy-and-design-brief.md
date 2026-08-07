@@ -25,16 +25,15 @@ A retainer for business-unit owners in regulated industries, especially financia
 1. Sticky nav
 2. Hero
 3. The situation
-4. Two ways in, the fork between the two offers
-5. Patterns, seven observations
-6. What you get, two steps in cards
-7. The honest part, dark panel
-8. How it starts, mechanics and price
-9. Who I am, portrait
-10. Track record, five entries
-11. The first session, eight questions
-12. Contact, green panel
-13. Footer, dark
+4. Patterns, seven observations
+5. What you get, two steps in cards
+6. The honest part, dark panel
+7. How it starts, mechanics and price
+8. Who I am, portrait
+9. Track record, five entries
+10. The first session, eight questions
+11. Contact, green panel
+12. Footer, dark
 
 ---
 
@@ -94,7 +93,7 @@ You bring a real decision. I tell you where you are, what is doable for a firm a
 
 **Card 2 · Then · specialist depth**
 
-Knowing who to bring in from the multidisciplinary team, and when, is most of the value to make a decision with confidence. On-demand expertise to get a complete understanding of business needs, customer expectations, system constraints and solution delivery. And not to forget AI model output validation, cybersecurity and the evidence your team and an auditor will ask for. When a decision turns on one of those, that specialist joins for the decision.
+When I see that a decision needs expertise from the multidisciplinary team, I know who to bring in and when. That might be the expertise to get a complete understanding of business needs, customer expectations, system constraints and solution delivery. And not to forget AI model output validation, cybersecurity and the evidence your team and an auditor will ask for. This is how you make a decision with confidence.
 
 Both cards must describe an event, not a capability. Card one has a trigger, an action and an outcome. Card two needs the same, which is what the closing sentence supplies. The card describes scope, never price. It must not be edited into anything implying a specialist's time is free.
 
@@ -111,18 +110,6 @@ That is the point of the retainer.
 The first session is where we both decide whether a retainer makes sense. You bring one real decision you are facing now. You leave with a clear view of where you are and what to do next, whether or not we go further. The first session carries no fee. What it asks of you is a real decision with real impact.
 
 If it earns a retainer, we continue month to month. One working session a week and quick calls between. A fixed monthly fee, from 5000 EUR plus VAT, for as long as it is useful for you.
-
-### Two ways in
-**Kicker:** TWO WAYS IN
-**Header:** One solution, or a stream of them.
-
-If you have one solution that has to reach production, there is a fixed-price week for that. One week, the specialists it needs, and a list of what is missing with what each fix would cost. From 15,000 EUR plus VAT.
-
-Link: Production readiness for AI-built solutions, to `/production-readiness.html`.
-
-If AI-built solutions keep appearing across your teams, the decisions keep coming with them. That is what the retainer is for, and it is what the rest of this page is about.
-
-This section sits directly after The situation and must stay there. Both offers address the same situation, so the reader has to be told which one is theirs before the page spends eight sections on the retainer. The closing sentence signposts what follows, which is unusual for a landing page and deliberate.
 
 ### Who I am
 **Header:** Who I am. Portrait sits above it.
